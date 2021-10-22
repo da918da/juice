@@ -1,0 +1,181 @@
+@import "./footer.css";
+@import "./header.css";
+
+* {
+  /* margin: o auto; */
+}
+/* banner */
+.banner {
+  background-image: url(../images/index_img/banner01-02.png);
+}
+.banner {
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  width: 1200px;
+  height: 420px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 120px;
+}
+
+.banner img {
+  width: 100%;
+  /* padding-bottom: 120px; */
+}
+
+.main {
+  width: 1200px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+/* content1 */
+.content1 > h1 {
+  font-size: 36px;
+  color: #4a847e;
+  border: 1px solid red;
+  display: inline-block;
+  writing-mode: vertical-lr;
+  letter-spacing: 10px;
+  margin: 0;
+
+  /* display: flex;
+  flex-flow: column wrap; */
+}
+
+.content1 > h2 {
+  font-size: 24px;
+  color: #4a847e;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.content1 > p {
+  font-size: 18px;
+  border: 1px solid red;
+  width: 400px;
+}
+.season {
+  border: 1px solid red;
+  display: inline-block;
+}
+.season img {
+  width: 300px;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+
+/* content2 */
+.content2 {
+  /* border: 1px solid rgb(105, 213, 168); */
+
+  /* display: flex;
+  flex-flow: row wrap; */
+}
+.bagr {
+  border: 1px solid red;
+  position: relative;
+}
+
+.content2 > h1 {
+  font-size: 36px;
+  color: #4a847e;
+  display: inline-block;
+  /* border: 1px solid blue; */
+  vertical-align: top;
+}
+.icon3 {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+}
+.icon3 img,
+.brand img {
+  width: 100px;
+}
+.pic_icon {
+  flex-flow: row wrap;
+}
+
+div.insist,
+.nature,
+.health,
+.brand {
+  /* border: 1px solid blue; */
+  /* display: inline-block; */
+
+  /* height: 150px; */
+}
+
+.content2 p {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+.brand_text {
+  font-size: 18px;
+  width: 300px;
+  background-color: #c7dec2;
+  color: white;
+  padding: 30px 20px;
+  display: inline-block;
+  /* margin-left: 10px; */
+  /* position: absolute;
+  top: 50px;  變成是選單的定位？ */
+}
+
+/* margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px; */
+
+.content2 {
+  border: 1px solid blue;
+}
+.content2 img.bagr {
+  width: 700px;
+}
+
+/* content3 */
+
+.content3 {
+  border: 1px solid red;
+}
+.content3 img {
+  width: 300px;
+}
+.content3 > h1 {
+  font-size: 36px;
+  color: #4a847e;
+  display: flex;
+  justify-content: center;
+  /* align-items: center;  無反應？ */
+}
+.happy_block {
+  border: 1px solid green;
+}
+.happy_block > a {
+  border: 1px solid red;
+  display: inline-block;
+  text-decoration: none;
+}
+.happy_block > a > p {
+  color: black;
+  font-size: 18px;
+}
+.happy_block > a > span {
+  border: 1px solid black;
+  display: inline-block;
+  width: 260px;
+  /* text-decoration: none; */
+}
+
+/* content4 */
+.content4 img {
+  width: 200px;
+}
+.content4 > h1 {
+  font-size: 36px;
+  color: #4a847e;
+  display: flex;
+  justify-content: right;
+  /* right: 30px; ???*/
+}

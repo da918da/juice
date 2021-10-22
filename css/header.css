@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+.header {
+  background-color: #c7dec2;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid blue; */
+}
+a.logo {
+  /* border: 1px solid black; */
+  vertical-align: middle;
+  display: inline-block;
+  /* margin-right: 80px; */
+}
+a.logo img {
+  height: 90px;
+  margin-left: 40px;
+}
+
+.nav {
+  /* border: 1px solid blue; */
+  font-size: 0;
+}
+.nav::after {
+  content: "";
+  display: block;
+  /* font-size: 16px; */
+  /* border: 1px solid red; */
+  clear: both;
+}
+
+ul.nav_list {
+  /* border: 1px solid blueviolet; */
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+ul.nav_list > li {
+  /* border: 1px solid greenyellow; */
+  display: inline-block;
+  vertical-align: top;
+}
+ul.nav_list li > a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #4a847e;
+  padding: 5px 12px;
+}
+/* ul.nav_list > li > a.-on {
+  color: hotpink;
+} */
+
+/* 本然品牌 */
+div.brand {
+  /* border: 1px solid black; */
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 50px;
+  text-align: center;
+  position: relative;
+}
+/* 本然品牌次選單調整 , ul.new_list*/
+ul.brand_list {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  display: none;
+  white-space: nowrap;
+}
+ul.brand_list > li {
+  /* border: 1px solid black; */
+}
+ul.brand_list > li > a {
+  /* border: 1px solid rgb(177, 106, 106); */
+  display: block;
+  padding: 5px 12px;
+}
+ul.brand_list > li > a:hover {
+  color: rgb(205, 133, 0);
+}
+
+.brand_name,
+.new_name {
+  color: #4a847e;
+  padding: 5px 12px;
+  display: inline-block;
+  cursor: default;
+}
+.brand_name:hover {
+  color: rgb(205, 133, 0);
+}
+/* .brand_name::after {
+  content: "";
+  display: inline-block;
+  border-top: 5px solid #4a847e;
+  border-right: 5px solid transparent;
+  border-bottom: 0px solid black;
+  border-left: 5px solid transparent;
+  margin-left: 5px;
+  top: -15px;
+} */
+/* .brand_name:hover::after {
+  border-top: 5px solid rgb(205, 133, 0);
+} */
+div.brand:hover ul.brand_list {
+  display: block;
+}
+
+/* 客製＋食材 */
+ul.food {
+  /* border: 1px solid green; */
+  display: inline-block;
+  list-style: none;
+  vertical-align: middle;
+}
+ul.food li {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-right: 50px;
+  padding: 5px 12px;
+}
+ul.food > li > a:hover {
+  color: rgb(205, 133, 0);
+}
+/* 最新消息 */
+div.new {
+  border: 1px solid black;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 50px;
+  text-align: center;
+  position: relative;
+}
+ul.new_list {
+  /* border: 1px solid red; */
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  /* display: none; */
+}
+ul.new_list > li {
+  /* border: 1px solid red; */
+}
+ul.new_list > li > a {
+  display: block;
+  padding: 5px 12px;
+}
+ul.new_list > li > a:hover {
+  color: rgb(205, 133, 0);
+}
+div.new:hover ul.new_list {
+  display: block;
+}
+/* menu */
+ul.menu {
+  border: 1px solid red;
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: center;
+  margin-right: 50px;
+}
+ul.menu a {
+  padding: 5px 12px;
+}
+ul.menu > li > a:hover {
+  color: rgb(205, 133, 0);
+}
+
+/* icon */
+
+ul.pic {
+  /* border: 1px solid red; */
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  vertical-align: center;
+}
+ul.pic a {
+  /* border: 1px solid green; */
+  display: inline-block;
+  vertical-align: middle;
+}
+ul.pic img {
+  width: 20px;
+  margin-right: 20px;
+}
