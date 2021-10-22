@@ -137,11 +137,17 @@ margin-inline-end: 0px; */
 /* content3 */
 
 .content3 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .content3 img {
-  width: 300px;
+  width: 386px;
+  height: 550px;
 }
+.pic_green {
+  /* border: 1px solid blue; */
+  margin-left: 20px;
+}
+
 .content3 > h1 {
   font-size: 36px;
   color: #4a847e;
@@ -152,25 +158,65 @@ margin-inline-end: 0px; */
 div.number1,
 .number2,
 .number3 {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 50px;
+  width: 95px;
+  height: 95px;
+  background-color: #4a847e;
+  color: white;
 }
+
 .happy_block {
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  display: flex;
 }
 .happy_block > a {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: inline-block;
   text-decoration: none;
 }
 .happy_block > a > p {
   color: black;
   font-size: 18px;
+  position: relative;
+  left: 120px;
+  top: -5px;
 }
 .happy_block > a > span {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: inline-block;
   width: 260px;
+  position: relative;
+  left: 120px;
+  bottom: 20px;
+  color: black;
+  font-size: 14px;
+  /* margin-right: 20px; */
   /* text-decoration: none; */
+}
+
+/* 123數字設定 */
+
+.number_block {
+  /* border: 1px solid green; */
+  display: flex;
+  /* width: 300px; */
+}
+.number_block > .number2,
+.number3 {
+  margin-left: 318px;
+  position: relative;
+  bottom: 110px;
+  left: 0;
+}
+.number_block > .number1 {
+  position: relative;
+  bottom: 110px;
+  left: 0;
 }
 
 /* content4 */
@@ -180,7 +226,9 @@ div.number1,
 .content4 > h1 {
   font-size: 36px;
   color: #4a847e;
-  display: flex;
-  justify-content: right;
-  /* right: 30px; ???*/
+  display: inline-block;
+  margin-top: 300px;
+  position: relative;
+  left: 600px;
+  border: 1px solid red;
 }
