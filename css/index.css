@@ -149,6 +149,11 @@ margin-inline-end: 0px; */
   justify-content: center;
   /* align-items: center;  無反應？ */
 }
+div.number1,
+.number2,
+.number3 {
+  font-size: 50px;
+}
 .happy_block {
   border: 1px solid green;
 }
