@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+.footer > a {
+  border: 1px solid red;
+  display: inline-block;
+}
+.footer_logo img {
+  width: 100px;
+  height: 80px;
+  margin-left: 50px;
+  margin-right: 30px;
+}
+.footer_block {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c7dec2;
+  margin-top: 200px;
+}
+.adress,
+.time {
+  font-size: 16px;
+  color: #4a847e;
+}
+
+.tibame {
+  /* border: 1px solid red; */
+  background-color: #c7dec2;
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  color: black;
+}

@@ -27,6 +27,7 @@
   width: 1200px;
   border: 1px solid black;
   margin: 0 auto;
+  font-size: 0;
 }
 /* content1 */
 .content1 > h1 {
@@ -64,35 +65,35 @@
 }
 
 /* content2 */
-.content2 {
-  /* border: 1px solid rgb(105, 213, 168); */
 
-  /* display: flex;
-  flex-flow: row wrap; */
-}
-.bagr {
-  border: 1px solid red;
+.content2 {
+  border: 1px solid rgb(105, 213, 168);
   position: relative;
 }
+.bagr {
+  /* border: 1px solid red; */
+}
 
-.content2 > h1 {
+/* .content2 > h1 {
   font-size: 36px;
   color: #4a847e;
   display: inline-block;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   vertical-align: top;
-}
+  position: relative;
+} */
 .icon3 {
   border: 1px solid red;
+  display: inline-block;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  position: absolute;
+  left: 220px;
+  top: 100px;
 }
 .icon3 img,
 .brand img {
   width: 100px;
-}
-.pic_icon {
-  flex-flow: row wrap;
 }
 
 div.insist,
@@ -110,6 +111,12 @@ div.insist,
   margin: 0;
   text-align: center;
 }
+.brand_title {
+  font-size: 36px;
+  color: #4a847e;
+  display: inline-block;
+  /* border: 1px solid red; */
+}
 .brand_text {
   font-size: 18px;
   width: 300px;
@@ -117,11 +124,15 @@ div.insist,
   color: white;
   padding: 30px 20px;
   display: inline-block;
-  /* margin-left: 10px; */
+  position: relative;
+
   /* position: absolute;
   top: 50px;  變成是選單的定位？ */
 }
-
+.brand_title {
+  font-size: 36px;
+  display: inline-block;
+}
 /* margin-block-start: 1em;
 margin-block-end: 1em;
 margin-inline-start: 0px;
@@ -221,14 +232,148 @@ div.number1,
 
 /* content4 */
 .content4 img {
-  width: 200px;
+  width: 450px;
+  width: 40%;
+  /* border: 1px solid red; */
+  position: relative;
+  margin-left: 150px;
+  margin-top: 200px;
 }
-.content4 > h1 {
+
+.content4 h1 {
   font-size: 36px;
   color: #4a847e;
   display: inline-block;
-  margin-top: 300px;
   position: relative;
-  left: 600px;
+  left: 650px;
+  top: -490px;
+  /* border: 1px solid red; */
+}
+p.text {
+  font-size: 16px;
+  /* border: 1px solid red; */
+  /* display: inline-block; */
+  width: 450px;
+  position: relative;
+  left: 650px;
+  top: -500px;
+}
+
+h1.net {
+  background-color: #4a847e;
+  width: 250px;
+  color: white;
+  font-size: 24px;
+  padding: 20px 30px;
+  text-align: center;
+  position: relative;
+  left: 950px;
+  top: -540px;
+  /* top: -90px; */
+  /* float: right;  飛出去？ */
+  /* width: calc(100% - 100px - 445px); */
+}
+
+h1.net::before {
   border: 1px solid red;
+  content: "a";
+}
+p.ml {
+  font-size: 14px;
+  color: #4a847e;
+  display: inline-block;
+  margin: 0;
+  /* border: 1px solid red; */
+  /* margin-left: 1000px; */
+  position: relative;
+  left: 720px;
+  top: -480px;
+}
+.button {
+  background-color: #4a847e;
+  border-radius: 20px;
+  padding: 8px 12px;
+  color: white;
+  position: relative;
+  top: -450px;
+  left: 900px;
+  font-size: 16px;
+}
+.boxjuice_block img {
+  width: 600px;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+.boxjuice_green img::after {
+  content: "a";
+  font-size: 20px;
+}
+.boxjuice_block {
+  /* border: 1px solid green; */
+  position: relative;
+}
+
+.orange {
+  /* border: 1px solid blue; */
+  display: inline-block;
+}
+.orange img {
+  margin-left: 600px;
+}
+
+.orange > h3,
+.dragon > h3,
+.green > h3 {
+  font-size: 24px;
+  display: inline-block;
+  z-index: 1;
+}
+.orange > h3 {
+  position: absolute;
+  left: 512px;
+  top: 100px;
+}
+.orange > p {
+  font-size: 16px;
+  display: inline-block;
+  background-color: #fff1a8;
+  padding: 20px;
+  position: absolute;
+  top: 280px;
+  left: 150px;
+}
+.dragon > h3 {
+  position: absolute;
+  left: 530px;
+  top: 500px;
+}
+.dragon > p {
+  font-size: 16px;
+  /* border: 1px solid green; */
+  display: inline-block;
+  background-color: #ffb5b5;
+  padding: 20px;
+  position: absolute;
+  top: 680px;
+  left: 700px;
+}
+
+.green img {
+  margin-left: 600px;
+}
+.green > h3 {
+  position: absolute;
+  left: 400px;
+  top: 900px;
+}
+.green > p {
+  font-size: 16px;
+  /* border: 1px solid green; */
+  display: inline-block;
+  width: 350px;
+  background-color: #adbb8a;
+  padding: 20px;
+  position: absolute;
+  top: 1000px;
+  left: 150px;
 }
