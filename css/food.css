@@ -10,7 +10,8 @@
 }
 .pick {
   /* border: 1px solid blue; */
-  margin: 200px 0;
+  margin-top: 200px;
+  margin-bottom: 250px;
   position: relative;
 }
 .pick_text > h3 {
@@ -95,6 +96,9 @@
   /* border: 1px solid black; */
 }
 /* farm */
+.farm {
+  position: relative;
+}
 .farm > p {
   font-size: 36px;
   color: #4a847e;
@@ -107,16 +111,22 @@
   /* right: 0px; */
   /* margin-left: 50%; */
 }
+.leaves {
+  width: 1200px;
+}
 .farm_pic {
   border: 1px solid rgb(5, 61, 126);
-  position: relative;
+  position: absolute;
+  top: -280px;
+  left: 35px;
 }
 .people {
   width: 350px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   top: 200px;
   z-index: 2;
+  left: 50px;
 }
 .leave img {
   width: 1200px;
@@ -127,39 +137,54 @@
 }
 /* words */
 .leave {
-  display: flex;
-  flex-flow: column wrap;
-  background-color: silver;
+  /* display: flex; */
+  /* flex-flow: column wrap; */
+  opacity: 0.5;
+  background-color: white;
   border-radius: 10px;
-  background-size: 200px;
+  background-size: 300px;
+  width: 550px;
+  height: 280px;
+  position: absolute;
+  top: 220px;
+  right: 100px;
 }
 .leave > h3 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 24px;
   display: inline-block;
   width: 550px;
+  text-align: center;
+  padding-top: 20px;
 }
 .leave > p {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-size: 18px;
-
-  display: inline-flex;
+  /* text-align: center; */
+  margin: 0 auto;
 
   /* display: inline-block; */
   width: 480px;
 }
-
 .taiwanpic {
-  margin-top: 400px;
+  /* margin-top: 400px; */
   width: 1100px;
 }
 .tree {
   width: 400px;
   position: absolute;
-  top: 700px;
   left: 700px;
+  top: 400px;
 }
 .taiwan {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   position: relative;
+  margin-bottom: 200px;
+}
+.taiwan p {
+  font-size: 36px;
+  color: #4a847e;
+  margin: 0;
+  margin-top: 300px;
+  margin-left: 80px;
 }

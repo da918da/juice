@@ -48,6 +48,7 @@
   color: #4a847e;
   text-decoration: underline;
   text-underline-offset: 10px;
+  margin: 0 auto;
 }
 .content1 > p {
   font-size: 18px;
@@ -83,13 +84,13 @@
   position: relative;
 } */
 .icon3 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: inline-block;
   display: flex;
   flex-flow: row nowrap;
   position: absolute;
-  left: 220px;
-  top: 100px;
+  left: 253px;
+  top: 145px;
 }
 .icon3 img,
 .brand img {
@@ -100,6 +101,7 @@ div.insist,
 .nature,
 .health,
 .brand {
+  padding: 20px;
   /* border: 1px solid blue; */
   /* display: inline-block; */
 
@@ -110,21 +112,25 @@ div.insist,
   font-size: 24px;
   margin: 0;
   text-align: center;
+  padding-top: 10px;
 }
 .brand_title {
   font-size: 36px;
   color: #4a847e;
   display: inline-block;
+
   /* border: 1px solid red; */
 }
 .brand_text {
   font-size: 18px;
-  width: 300px;
+  width: 311px;
   background-color: #c7dec2;
   color: white;
-  padding: 30px 20px;
+  padding: 40px 50px;
   display: inline-block;
-  position: relative;
+  position: absolute;
+  right: -109px;
+  bottom: -1425px;
 
   /* position: absolute;
   top: 50px;  變成是選單的定位？ */
@@ -133,7 +139,8 @@ div.insist,
   font-size: 36px;
   display: inline-block;
   position: absolute;
-  top: 20px;
+  top: 1979px;
+  right: 60px;
 }
 /* margin-block-start: 1em;
 margin-block-end: 1em;
@@ -142,9 +149,10 @@ margin-inline-end: 0px; */
 
 .content2 {
   border: 1px solid blue;
+  position: relative;
 }
 .content2 img.bagr {
-  width: 700px;
+  width: 892px;
 }
 
 /* content3 */
@@ -233,6 +241,9 @@ div.number1,
 }
 
 /* content4 */
+.content4 {
+  position: relative;
+}
 .content4 img {
   width: 450px;
   width: 40%;
@@ -259,6 +270,7 @@ p.text {
   position: relative;
   left: 650px;
   top: -500px;
+  height: 0;
 }
 
 h1.net {
@@ -277,8 +289,8 @@ h1.net {
 }
 
 h1.net::before {
-  border: 1px solid red;
-  content: "a";
+  /* border: 1px solid red;
+  content: "a"; */
 }
 p.ml {
   font-size: 14px;
@@ -296,9 +308,9 @@ p.ml {
   border-radius: 20px;
   padding: 8px 12px;
   color: white;
-  position: relative;
-  top: -450px;
-  left: 900px;
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
   font-size: 16px;
 }
 .boxjuice_block img {
@@ -306,10 +318,14 @@ p.ml {
   margin: 0;
   /* border: 1px solid red; */
 }
-.boxjuice_green img::after {
+.boxjuice_green {
+  position: relative;
+}
+
+/* .boxjuice_green img::after {
   content: "a";
   font-size: 20px;
-}
+} */
 .boxjuice_block {
   /* border: 1px solid green; */
   position: relative;
@@ -378,4 +394,52 @@ p.ml {
   position: absolute;
   top: 1000px;
   left: 150px;
+}
+.line {
+  height: 1px;
+  width: 320px;
+  background-color: black;
+  position: absolute;
+  bottom: 371px;
+  right: 248px;
+}
+.net_block {
+  position: absolute;
+  bottom: -240px;
+}
+.box_green {
+  width: 400px;
+  height: 400px;
+  background-color: #4a847e;
+  position: absolute;
+  top: 400px;
+}
+div.brand {
+  position: absolute;
+  bottom: 270px;
+  left: 400px;
+  font-size: 24px;
+}
+div.brand p {
+  font-size: 24px;
+}
+.thin {
+  position: absolute;
+  font-size: 30px;
+  width: 386px;
+  height: 125px;
+  background-color: white;
+  opacity: 0.7;
+  bottom: -2221px;
+}
+
+.thin:hover {
+  display: none;
+}
+
+.thin span {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  color: black;
 }

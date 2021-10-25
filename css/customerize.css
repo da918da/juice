@@ -1,0 +1,176 @@
+@import "./footer.css";
+@import "./header.css";
+* {
+  box-sizing: border-box;
+}
+.main {
+  width: 1200px;
+  border: 1px solid black;
+  margin: 0 auto;
+  /* height: 5000px; */
+  /* font-size: 0; */
+}
+.trouble {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-top: 100px;
+  width: fit-content;
+}
+.trouble img {
+  display: inline-block;
+  width: 780px;
+}
+.trouble p {
+  /* border: 1px solid red; */
+  display: inline-block;
+  writing-mode: vertical-lr;
+  letter-spacing: 10px;
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 30px;
+  vertical-align: top;
+
+  font-size: 36px;
+  color: #4a847e;
+}
+.trouble_text {
+  /* border: 1px solid blue; */
+  width: 310px;
+  display: inline-block;
+  position: relative;
+}
+
+.trouble_text h3 {
+  /* border: 1px solid blue; */
+  font-size: 24px;
+  color: white;
+  background-color: #4a847e;
+  padding: 10px 20px;
+  display: inline-block;
+  position: absolute;
+  top: -63px;
+  left: 142px;
+  /* margin-top: 300px; */
+}
+.trouble4 {
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 280px;
+  background-color: #c7dec2;
+  padding: 40px;
+}
+.trouble4 > p {
+  font-size: 20px;
+  background-color: #c7dec2;
+  margin: 0;
+  /* text-align: center; */
+  line-height: 40px;
+
+  /* vertical-align: middle; */
+}
+p.everyday {
+  border: 1px solid red;
+  width: 600px;
+  font-size: 18px;
+  line-height: 30px;
+  display: inline-block;
+  margin: 0;
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+
+.background {
+  background-image: url(../images/cutomerize/bag2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1200px;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: 0px 25px;
+  margin-bottom: 80px;
+}
+.background p {
+  font-size: 36px;
+  text-align: center;
+  padding: 100px;
+  margin: 0;
+
+  /* border: 1px solid red; */
+}
+
+/* promise */
+.promise_title {
+  font-size: 36px;
+  color: #4a847e;
+  text-align: center;
+  margin-top: 300px;
+}
+.promise img {
+  width: 340px;
+  border-radius: 30px;
+  /* vertical-align: middle; */
+  margin-top: 30px;
+  margin: 30px 20px 20px 20px;
+}
+.promise {
+  border: 1px solid red;
+  /* display: inline-block; */
+  display: flex;
+  margin-top: 80px;
+}
+.insist {
+  /* border: 1px solid green; */
+  background-color: #4a857e;
+  width: 387px;
+  height: 480px;
+  margin-right: 20px;
+}
+.promise p {
+  font-size: 18px;
+  /* text-align: center; */
+  color: black;
+}
+.promise h3 {
+  font-size: 12px;
+  margin: 0;
+  margin: 0 15px 0 30px;
+  /* text-align: center; */
+  width: 335px;
+  color: black;
+}
+
+.nature {
+  /* border: 1px solid green; */
+  background-color: #c7dec2;
+  width: 387px;
+  height: 480px;
+  margin-right: 20px;
+}
+
+.health {
+  /* border: 1px solid green; */
+  background-color: #4a857e;
+  width: 387px;
+  height: 480px;
+}
+/* customerize */
+.customerize {
+  border: 1px solid black;
+  margin-top: 300px;
+}
+
+.customerize img {
+  width: 1200px;
+}
+.final_img {
+  margin-bottom: 150px;
+}
+.customerize p {
+  font-size: 36px;
+  color: #4a847e;
+  border: 1px solid red;
+  display: inline-block;
+  writing-mode: vertical-lr;
+  letter-spacing: 10px;
+  margin: 0;
+}
