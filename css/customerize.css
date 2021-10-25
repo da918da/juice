@@ -5,7 +5,7 @@
 }
 .main {
   width: 1200px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0 auto;
   /* height: 5000px; */
   /* font-size: 0; */
@@ -69,7 +69,7 @@
   /* vertical-align: middle; */
 }
 p.everyday {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 600px;
   font-size: 18px;
   line-height: 30px;
@@ -113,7 +113,7 @@ p.everyday {
   margin: 30px 20px 20px 20px;
 }
 .promise {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* display: inline-block; */
   display: flex;
   margin-top: 80px;
@@ -155,7 +155,7 @@ p.everyday {
 }
 /* customerize */
 .customerize {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 300px;
 }
 
@@ -168,7 +168,7 @@ p.everyday {
 .customerize p {
   font-size: 36px;
   color: #4a847e;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: inline-block;
   writing-mode: vertical-lr;
   letter-spacing: 10px;
