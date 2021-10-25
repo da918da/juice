@@ -132,6 +132,8 @@ div.insist,
 .brand_title {
   font-size: 36px;
   display: inline-block;
+  position: absolute;
+  top: 20px;
 }
 /* margin-block-start: 1em;
 margin-block-end: 1em;

@@ -1,0 +1,165 @@
+@import "./footer.css";
+@import "./header.css";
+* {
+  box-sizing: border-box;
+}
+.main {
+  /* border: 1px solid red; */
+  width: 1200px;
+  margin: 0 auto;
+}
+.pick {
+  /* border: 1px solid blue; */
+  margin: 200px 0;
+  position: relative;
+}
+.pick_text > h3 {
+  font-size: 36px;
+  color: #4a847e;
+  margin: 0;
+  margin-bottom: 30px;
+  width: 200px;
+  display: inline-flex;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 130px;
+  left: 40px;
+}
+.pick_text > p {
+  /* border: 1px solid red; */
+  display: inline-flex;
+  width: 316px;
+  font-size: 24px;
+  margin: 0;
+  position: absolute;
+  top: 210px;
+  left: 40px;
+}
+.pick_text > span {
+  font-size: 16px;
+  /* border: 1px solid red; */
+  display: inline-flex;
+  width: 316px;
+  position: absolute;
+  top: 250px;
+  left: 40px;
+}
+.pick_text {
+  display: inline-flex;
+  flex-flow: column wrap;
+  /* margin-right: 200px; */
+}
+.item_3 {
+  /* border: 1px solid green; */
+  /* display: inline-block; */
+  display: inline-flex;
+  /* flex-direction: row-reverse; */
+  vertical-align: bottom;
+  justify-content: space-between;
+  width: 712px;
+  margin-left: 484px;
+}
+/* item_5 */
+.item_5 {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+/* item_4 */
+.item_4 {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 955px;
+  margin-left: 242px;
+}
+/* item_2 */
+.item_2 {
+  width: 465px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 731px;
+  margin-top: 20px;
+}
+
+/* .grid_container {
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+} */
+.grid_item img {
+  width: 215px;
+
+  /* border: 1px solid black; */
+}
+/* farm */
+.farm > p {
+  font-size: 36px;
+  color: #4a847e;
+  margin: 0;
+  /* border: 1px solid red; */
+  width: 306px;
+  display: inline-flex;
+  position: relative;
+  left: 890px;
+  /* right: 0px; */
+  /* margin-left: 50%; */
+}
+.farm_pic {
+  border: 1px solid rgb(5, 61, 126);
+  position: relative;
+}
+.people {
+  width: 350px;
+  border: 1px solid red;
+  position: absolute;
+  top: 200px;
+  z-index: 2;
+}
+.leave img {
+  width: 1200px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+/* words */
+.leave {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: silver;
+  border-radius: 10px;
+  background-size: 200px;
+}
+.leave > h3 {
+  border: 1px solid red;
+  font-size: 24px;
+  display: inline-block;
+  width: 550px;
+}
+.leave > p {
+  border: 1px solid red;
+  font-size: 18px;
+
+  display: inline-flex;
+
+  /* display: inline-block; */
+  width: 480px;
+}
+
+.taiwanpic {
+  margin-top: 400px;
+  width: 1100px;
+}
+.tree {
+  width: 400px;
+  position: absolute;
+  top: 700px;
+  left: 700px;
+}
+.taiwan {
+  border: 1px solid green;
+  position: relative;
+}
