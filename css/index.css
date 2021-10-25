@@ -68,7 +68,7 @@
 /* content2 */
 
 .content2 {
-  border: 1px solid rgb(105, 213, 168);
+  border: 1px solid purple;
   position: relative;
 }
 .bagr {
@@ -118,6 +118,7 @@ div.insist,
   font-size: 36px;
   color: #4a847e;
   display: inline-block;
+  position: relative;
 
   /* border: 1px solid red; */
 }
@@ -129,8 +130,8 @@ div.insist,
   padding: 40px 50px;
   display: inline-block;
   position: absolute;
-  right: -109px;
-  bottom: -1425px;
+  right: 109px;
+  bottom: -1606px;
 
   /* position: absolute;
   top: 50px;  變成是選單的定位？ */
@@ -147,10 +148,6 @@ margin-block-end: 1em;
 margin-inline-start: 0px;
 margin-inline-end: 0px; */
 
-.content2 {
-  border: 1px solid blue;
-  position: relative;
-}
 .content2 img.bagr {
   width: 892px;
 }
@@ -378,6 +375,7 @@ p.ml {
 
 .green img {
   margin-left: 600px;
+  margin-bottom: 200px;
 }
 .green > h3 {
   position: absolute;

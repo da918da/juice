@@ -1,0 +1,142 @@
+@import "./footer.css";
+@import "./header.css";
+* {
+  box-sizing: border-box;
+}
+.article1 {
+  border: 1px solid red;
+  width: 1200px;
+  margin: 0 auto;
+}
+.num {
+  font-size: 72px;
+}
+.title1,
+.title2,
+.title3 {
+  font-size: 36px;
+}
+.article1 p {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 470px;
+  font-size: 16px;
+  line-height: 30px;
+  /* display: inline-block; */
+}
+.quality_pic img {
+  /* border: 1px solid blue;
+
+  width: 30%; */
+}
+.block1 {
+  /* border: 1px solid black;
+  margin: 0 auto; */
+  position: relative;
+}
+.quality {
+  margin-top: 170px;
+  margin-left: 100px;
+}
+
+.derection1 {
+  width: 18%;
+  position: absolute;
+  top: 400px;
+  left: 240px;
+}
+
+.cut {
+  /* border: 1px solid blue; */
+  width: 550px;
+  height: 550px;
+  border-radius: 100%;
+  position: absolute;
+  top: 75px;
+  left: 558px;
+  /* margin-bottom: 300px; */
+}
+
+/* nature */
+
+.block2 {
+  border: 1px solid black;
+  margin: 0 auto;
+  position: relative;
+  height: 1100px;
+}
+
+.nature {
+  border: 1px solid rgb(157, 1, 152);
+  position: relative;
+  margin-top: 250px;
+}
+
+.num {
+  /* border: 1px solid blue; */
+  position: absolute;
+  right: 470px;
+  top: 232px;
+}
+
+.num1,
+.num3 {
+  font-size: 72px;
+}
+.title2 {
+  /* border: 1px solid blue; */
+  position: absolute;
+  right: 200px;
+  top: 262px;
+}
+.nature > p {
+  position: absolute;
+  right: 70px;
+  top: 332px;
+}
+.nature_pic {
+  margin-bottom: 150px;
+}
+.banana {
+  border-radius: 100%;
+  width: 550px;
+  height: 550px;
+  position: absolute;
+  top: 500px;
+  left: 50px;
+}
+
+.derection2 {
+  width: 22%;
+  position: absolute;
+  top: 840px;
+  right: 140px;
+}
+
+.block3 {
+  border: 1px solid black;
+  margin: 0 auto;
+  position: relative;
+  height: 980px;
+}
+
+.health {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.juice {
+  width: 550px;
+  height: 550px;
+  border: 1px solid black;
+  border-radius: 100%;
+  position: absolute;
+  top: 273px;
+  right: 123px;
+}
+
+.flag {
+  width: 70%;
+  /* margin: 0 auto; */
+  /* margin-bottom: 500px; */
+}
