@@ -25,7 +25,7 @@
 
 .main {
   width: 1200px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0 auto;
   font-size: 0;
 }
@@ -33,7 +33,7 @@
 .content1 > h1 {
   font-size: 36px;
   color: #4a847e;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: inline-block;
   writing-mode: vertical-lr;
   letter-spacing: 10px;
@@ -52,23 +52,23 @@
 }
 .content1 > p {
   font-size: 18px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 400px;
 }
 .season {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: inline-block;
 }
 .season img {
   width: 300px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   border-radius: 10px;
 }
 
 /* content2 */
 
 .content2 {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   position: relative;
 }
 .bagr {
