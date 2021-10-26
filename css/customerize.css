@@ -156,15 +156,40 @@ p.everyday {
 /* customerize */
 .customerize {
   /* border: 1px solid black; */
+  width: 1200px;
+  height: 2500px;
   margin-top: 300px;
+  background-image: url(../images/cutomerize/custo.JPG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+  position: relative;
 }
 
 .customerize img {
   width: 1200px;
 }
-.final_img {
-  margin-bottom: 150px;
+.green_banner {
+  /* border: 1px solid red; */
+  margin-bottom: 300px;
 }
+.orange_banner {
+  /* border: 1px solid red; */
+  margin-top: 400px;
+}
+.fresh {
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 880px;
+  left: 60px;
+}
+.your {
+  position: absolute;
+  top: 1000px;
+  left: 120px;
+}
+
 .customerize p {
   font-size: 36px;
   color: #4a847e;

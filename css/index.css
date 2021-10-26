@@ -3,6 +3,7 @@
 
 * {
   /* margin: o auto; */
+  /* outline: 1px solid blue; */
 }
 /* banner */
 .banner {
@@ -30,6 +31,10 @@
   font-size: 0;
 }
 /* content1 */
+.content1 {
+  position: relative;
+}
+
 .content1 > h1 {
   font-size: 36px;
   color: #4a847e;
@@ -38,6 +43,9 @@
   writing-mode: vertical-lr;
   letter-spacing: 10px;
   margin: 0;
+  position: absolute;
+  height: 185px;
+  top: -30px;
 
   /* display: flex;
   flex-flow: column wrap; */
@@ -49,20 +57,26 @@
   text-decoration: underline;
   text-underline-offset: 10px;
   margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
 }
 .content1 > p {
   font-size: 18px;
   /* border: 1px solid red; */
   width: 400px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 .season {
   /* border: 1px solid red; */
   display: inline-block;
 }
 .season img {
-  width: 300px;
+  width: 250px;
   /* border: 1px solid green; */
   border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 240px;
 }
 
 /* content2 */
@@ -114,14 +128,7 @@ div.insist,
   text-align: center;
   padding-top: 10px;
 }
-.brand_title {
-  font-size: 36px;
-  color: #4a847e;
-  display: inline-block;
-  position: relative;
 
-  /* border: 1px solid red; */
-}
 .brand_text {
   font-size: 18px;
   width: 311px;
@@ -130,18 +137,19 @@ div.insist,
   padding: 40px 50px;
   display: inline-block;
   position: absolute;
-  right: 109px;
-  bottom: -1606px;
+  right: 0px;
+  bottom: 160px;
 
   /* position: absolute;
-  top: 50px;  變成是選單的定位？ */
+  top: 50px;  霈𦠜��舫��桃�摰帋�嚗� */
 }
 .brand_title {
   font-size: 36px;
   display: inline-block;
   position: absolute;
-  top: 1979px;
-  right: 60px;
+  top: -800px;
+  right: 100px;
+  color: #4a847e;
 }
 /* margin-block-start: 1em;
 margin-block-end: 1em;
@@ -171,7 +179,7 @@ margin-inline-end: 0px; */
   color: #4a847e;
   display: flex;
   justify-content: center;
-  /* align-items: center;  無反應？ */
+  /* align-items: center;  �∪��㚁� */
 }
 div.number1,
 .number2,
@@ -196,6 +204,7 @@ div.number1,
   /* border: 1px solid red; */
   display: inline-block;
   text-decoration: none;
+  position: relative;
 }
 .happy_block > a > p {
   color: black;
@@ -217,7 +226,7 @@ div.number1,
   /* text-decoration: none; */
 }
 
-/* 123數字設定 */
+/* 123�詨�閮剖� */
 
 .number_block {
   /* border: 1px solid green; */
@@ -281,7 +290,7 @@ h1.net {
   left: 950px;
   top: -540px;
   /* top: -90px; */
-  /* float: right;  飛出去？ */
+  /* float: right;  憌𥕦枂�鳴� */
   /* width: calc(100% - 100px - 445px); */
 }
 
@@ -428,7 +437,7 @@ div.brand p {
   height: 125px;
   background-color: white;
   opacity: 0.7;
-  bottom: -2221px;
+  bottom: 120px;
 }
 
 .thin:hover {
@@ -440,4 +449,7 @@ div.brand p {
   justify-content: center;
   padding-top: 45px;
   color: black;
+}
+.box {
+  position: relative;
 }
