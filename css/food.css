@@ -139,7 +139,7 @@
 .leave {
   /* display: flex; */
   /* flex-flow: column wrap; */
-  opacity: 0.5;
+  opacity: 0.6;
   background-color: white;
   border-radius: 10px;
   background-size: 300px;

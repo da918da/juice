@@ -76,7 +76,7 @@
   /* border: 1px solid green; */
   border-radius: 10px;
   padding: 10px;
-  margin-bottom: 240px;
+  margin-bottom: 100px;
 }
 
 /* content2 */
@@ -103,12 +103,32 @@
   display: flex;
   flex-flow: row nowrap;
   position: absolute;
-  left: 253px;
-  top: 145px;
+  left: 220px;
+  top: 120px;
 }
 .icon3 img,
 .brand img {
   width: 100px;
+}
+
+.plus1,
+.plus2 {
+  /* border: 1px solid blue; */
+  margin-top: 80px;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: inline-block;
+}
+.plus1 img,
+.plus2 img,
+.plus3 img {
+  width: 31px;
+}
+
+.plus3 {
+  position: absolute;
+  left: 480px;
+  top: 300px;
 }
 
 div.insist,
@@ -147,7 +167,7 @@ div.insist,
   font-size: 36px;
   display: inline-block;
   position: absolute;
-  top: -800px;
+  top: -655px;
   right: 100px;
   color: #4a847e;
 }
@@ -179,6 +199,7 @@ margin-inline-end: 0px; */
   color: #4a847e;
   display: flex;
   justify-content: center;
+  margin-top: 8px;
   /* align-items: center;  �∪��㚁� */
 }
 div.number1,
@@ -235,7 +256,7 @@ div.number1,
 }
 .number_block > .number2,
 .number3 {
-  margin-left: 318px;
+  margin-left: 311px;
   position: relative;
   bottom: 110px;
   left: 0;
@@ -423,12 +444,12 @@ p.ml {
 }
 div.brand {
   position: absolute;
-  bottom: 270px;
-  left: 400px;
-  font-size: 24px;
+  bottom: 250px;
+  left: 420px;
 }
 div.brand p {
   font-size: 24px;
+  margin: 10px 0;
 }
 .thin {
   position: absolute;
@@ -439,9 +460,17 @@ div.brand p {
   opacity: 0.7;
   bottom: 120px;
 }
-
 .thin:hover {
+  display: block;
+}
+
+.thin {
   display: none;
+  /* border: 1px solid black; */
+}
+
+.happy_block a:hover .thin {
+  display: block;
 }
 
 .thin span {
@@ -449,6 +478,7 @@ div.brand p {
   justify-content: center;
   padding-top: 45px;
   color: black;
+  /* display: none; */
 }
 .box {
   position: relative;
