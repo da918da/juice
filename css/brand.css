@@ -189,12 +189,15 @@ p.information {
 
 /* article3 */
 .article3 {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   width: 1200px;
   margin: 0 auto;
   text-align: center;
   margin-top: 120px;
   margin-bottom: 120px;
+  transform: translate3d(-495px, 0px, 0px);
+  transition: all 0.25s ease 0s;
+  /* width: 1200px; */
 }
 .certificate img {
   /* border: 1px solid blue; */

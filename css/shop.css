@@ -1,2 +1,188 @@
 @import "./footer.css";
 @import "./header.css";
+* {
+  box-sizing: border-box;
+}
+.main {
+  /* border: 1px solid orange; */
+  width: 1200px;
+  margin: 0 auto;
+  /* height: 9000px; */
+}
+.banner_shop {
+  /* border: 1px solid black; */
+  width: 1200px;
+}
+.banner_shop img {
+  /* border: 1px solid black; */
+  /* width: 1200px; */
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+
+  margin: 0 auto;
+}
+.breadcrum {
+  /* border: 1px solid black; */
+  /* width: 1200px; */
+  padding: 15px;
+  background-color: #4a847e;
+  margin: 50px 0;
+  /* padding-left: 100px; */
+
+  /* font-size: 0;  ?? */
+}
+.breadcrum_block {
+  /* border: 1px solid white; */
+  width: fit-content;
+  margin: 0 auto;
+}
+.breadcrum_block > a {
+  text-decoration: none;
+  color: white;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.breadcrum_block > span {
+  font-size: 16px;
+  display: inline-block;
+
+  /* text-align: center; ??*/
+}
+
+/* shop_item1 */
+.item1 img,
+.item2 img,
+.item3 img,
+.item4 img {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+}
+.item1,
+.item2,
+.item3,
+.item4 {
+  /* border: 1px solid black; */
+  position: relative;
+  margin-bottom: 180px;
+  font-size: 0;
+}
+
+/* 商品圖片平均分配寫法一 flex*/
+.tryflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 商品圖片平均分配寫法二inline-block */
+
+/* .detail {
+  border: 1px solid black;
+  display: inline-block;
+  width: 280px;
+  height: 80px;
+  border-radius: 0 0 15px 15px;
+  display: inline-block;
+  position: absolute;
+  top: 350px;
+  left: 0;
+}
+.item {
+  margin-right: 24px;
+} */
+
+/* 偽元素作框框 */
+
+.detail {
+  position: relative;
+}
+/* .detail::after {
+  border: 1px solid gray;
+  font-size: 14px;
+  content: "";
+  display: block;
+
+  width: 279px;
+  height: 80px;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  left: 0;
+  bottom: -84px;
+} */
+
+.card {
+  /* border: 1px solid red; */
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  font-size: 0;
+  position: relative;
+
+  /* overflow: hidden; */
+}
+
+.other_notes {
+  /* border: 1px solid blue; */
+  border-radius: 0 0 15px 15px;
+  box-shadow: 1px 1px 10px rgb(99, 99, 99);
+}
+
+/* 底部的次要說明定位及相關樣式 */
+div.other_notes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  background-color: white;
+  font-size: 14px;
+  color: black;
+  padding: 10px 10px;
+
+  transform: translateY(80%);
+
+  transition: transform 0.4s;
+}
+a.card:hover div.other_notes {
+  transform: translateY(40%);
+}
+
+.name {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.price {
+  font-size: 14px;
+}
+
+.product_group {
+  border: 1px solid red;
+  width: 1200px;
+  margin-bottom: 120px;
+  font-size: 0;
+  position: relative;
+  /* margin-bottom: 200px; */
+}
+.product_name {
+  font-size: 28px;
+}
+.product_name::before {
+  /* content: "a"; */
+  clear: both;
+}
+.goshop {
+  border: 1px solid green;
+  display: flex;
+  flex-flow: column wrap;
+  width: 300px;
+}
+h2.name {
+  border: 1px solid blue;
+  width: 300px;
+  display: inline;
+  margin: 0;
+}

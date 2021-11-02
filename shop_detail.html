@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/shop_detail.css">
+  </head>
+  <body>
+    <header class="header">
+        <nav class="nav">
+          <a href="../index.html" class="logo"
+            ><img src="./images/index_img/logook-04.png"
+          /></a>
+          <!-- <div class="brand">
+            <span class="brand_name">本然品牌</span>
+            <ul class="brand_list">
+              <li><a href="#">常見QA</a></li>
+              <li><a href="#">檢驗證書</a></li>
+            </ul>
+          </div> -->
+          <ul class="nav_list">
+              <!-- <div class="brand">
+                  <span class="brand_name">本然品牌</span>
+                  <ul class="brand_list">
+                    <li><a href="#">常見QA</a></li>
+                    <li><a href="#">檢驗證書</a></li>
+                  </ul>
+                </div> -->
+  
+            <ul class="food">
+              <li><a href="./brand.html">本然品牌</a></li>
+  
+                <ul class="brand_list">
+                  <li><a href="./brand.html">常見QA</a></li>
+                  <li><a href="./brand.html">檢驗證書</a></li>
+                </ul>
+              </li>
+  
+              <li><a href="./customerize.html" class="-on">客製果汁</a></li>
+              <li><a href="./food.html">嚴選食材</a></li>
+              <li>
+                <a href="./news.html">最新消息</a>
+                <!-- <ul class="new_list">
+                  <li><a href="#">促銷活動</a></li>
+                  <li><a href="#">最新資訊</a></li>
+                </ul> -->
+              </li>
+              <li><a href="./shop.html">Menu</a></li>
+            </ul>
+  
+            <!-- <div class="new">
+              <span class="new_name">最新消息</span>
+              <ul class="new_list">
+                <li><a href="#">促銷活動</a></li>
+                <li><a href="#">最新資訊</a></li>
+              </ul>
+            </div> -->
+  
+            <!-- <ul class="menu">
+              <li><a href="#">Menu</a></li>
+            </ul> -->
+            <ul class="pic">
+              <a href="https://www.facebook.com/"
+                ><img src="./images/index_img/facebook.png" class="fb"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img src="./images/index_img/instagram.png" class="ig"
+              /></a>
+              <a href="./shop.html"
+                ><img src="./images/index_img/shopping-cart.png" class="cart"
+              /></a>
+            </ul>
+          </ul>
+        </nav>
+      </header>
+
+
+<main class="main">
+      <div class="banner_shop">
+        <img src="./images/bannerg.jpg" alt="" />
+      </div>
+
+    <div class="product">
+        <div class="pic4">  
+            <div>
+                <img class="big_size" src="./images/goods/goods/蔬菜/b5a552ff59ead32a849a069118eb8e25.jpg"/>
+            </div>
+
+            <div class="small_size_group">
+                <img class="small_size" src="./images/goods/goods/蔬菜/b5a552ff59ead32a849a069118eb8e25.jpg"/>
+                <img class="small_size" src="./images/goods/goods/蔬菜/b5a552ff59ead32a849a069118eb8e25.jpg"/>
+                <img class="small_size" src="./images/goods/goods/蔬菜/b5a552ff59ead32a849a069118eb8e25.jpg"/>
+            </div>
+        </div>
+            <div class="detail">
+            <h1 class="name">蔬菜濃縮汁</h1><br>
+            <p class="p">售價 | NT$99</p><br>
+            <p class="p">尺寸 | M / L  </p><br>
+                <div class="amount"> 
+                    <span>數量</span>   
+                    <div class="button" id="decrease" onclick="decreaseValue()" value="decreaseValue">-</div>
+                    <input type="number" id="number">
+                    <div class="button" id="increase" onclick="increaseValue()" value="increaseValue">+</div>
+                </div>
+            
+            <a class="btn_addCart" href="#">加入購物車</a>
+            <a class="btn_buy" href="#">立即結帳</a>
+            </div>
+    </div>
+
+    <div class="line" ></div>
+    <p class="other_items">相關商品 </p>
+    <div class="other_pic">
+        <img class="first_pic" src="./images/goods/goods/juice/38c1e3fae6435c97e53c5cab963a6104.jpg" alt="">
+        <img src="./images/goods/goods/juice/a268de62bb3c2ef9822cf3897ccefc9b.jpg" alt="">
+        <img src="./images/goods/goods/養身茶/2.jpg" alt="">
+        <img src="./images/goods/goods/養身茶/3.jpg" alt="">
+        <img src="./images/goods/goods/juice/b12cdb9eac40536479329c29c1edc105.jpg" alt="">
+
+    </div>
+
+
+
+
+</main>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer_block">
+          <p class="adress">ADDRES | 地址<br>台北市信義區菸廠路88號</p>
+          <div class="footer_logo"> 
+             <a href="../index.html"><img src="./images/index_img/logook-04.png"></a>
+          </div>
+        <p class="time">
+        OPENING HOURS | 營業時間 <br>
+        星期一休息 / 星期二～日 11:00~20:00
+        </p>
+      </div>
+        <p class="tibame">本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。 <br>
+          若有侵權疑慮，您可以私訊[緯育TibaMe]，後續會由專人協助處理 <br>
+          ※ [TibaMe-前端設計工程師養成班] <br>
+          若有牴觸相關著作權，或有第三人主張侵害智慧財產權等情事，均由學員負法律上責任，緯育公司概不負責，請學員製作專題時需特別留意!
+          </p>
+        
+      </footer>
+
+  </body>
+</html>
