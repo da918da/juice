@@ -1,2 +1,118 @@
 @import "./footer.css";
 @import "./header.css";
+
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.promotions {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 70px;
+  color: #4a847e;
+}
+.main1 {
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  display: flex;
+}
+.aside {
+  /* border: 1px solid blue; */
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  width: 65%;
+}
+p.title_name {
+  /* border: 1px solid red; */
+  font-size: 48px;
+  display: block;
+  height: 320px;
+  margin: 0;
+  vertical-align: top;
+  padding: 30px 90px 30px 36px;
+  border-right: 1px solid black;
+}
+
+.subtitle {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  /* display: inline-block; */
+  /* height: calc(100% - 320px); */
+  height: 179px;
+}
+.item_name {
+  /* border: 1px solid red; */
+  display: inline-block;
+  padding-top: 10px;
+
+  padding-left: 30px;
+  font-size: 18px;
+  display: inline-block;
+  /* margin-top: 20px; */
+  margin-right: 428px;
+}
+
+/* 價格 */
+.price_group {
+  /* border: 1px solid black; */
+  /* display: flex; */
+  display: inline-block;
+  /* margin-left: 400px; */
+  margin-top: 18px;
+  /* padding-right: 30px; */
+}
+
+.cost_price {
+  display: inline-block;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.sale_price {
+  display: inline-block;
+  color: red;
+}
+.viewproduct_btn {
+  display: block;
+  /* border: 1px solid black; */
+  width: 130px;
+  font-size: 12px;
+  /* font-weight: 400px; */
+  text-decoration: none;
+  color: white;
+  background-color: #4a847e;
+  text-align: center;
+  padding: 8px 12px;
+  margin-left: 30px;
+  margin-top: 45px;
+}
+/* photos */
+.photos img {
+  width: 300px;
+  display: block;
+  margin: auto;
+}
+.photos {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  /* border: 1px solid red; */
+}
+
+/* dot */
+.dot {
+  display: block;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}

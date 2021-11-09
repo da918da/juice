@@ -24,44 +24,59 @@
   margin: 0 auto;
 }
 
-.pic4 {
-  border: 1px solid gray;
+.main_content {
   width: 1000px;
   margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid gray;
+
   border-radius: 30px;
 }
 
-.product {
-  /* border: 1px solid blue; */
-  margin-top: 50px;
-  /* width: fit-content; */
-  display: flex;
+.aside {
+  /* border: 1px solid gray; */
+  display: inline-block;
+
+  margin: 0 auto;
+  border-radius: 30px;
+  vertical-align: middle;
+}
+.aside img {
+  width: fit-content;
 }
 
 .big_size {
-  width: 550px;
-  padding: 30px 60px;
+  /* border: 1px solid black; */
+  display: inline-block;
+
+  padding: 30px 50px;
+}
+.big_size img {
+  width: 450px;
+  height: 600px;
 }
 
+/* small pic */
 .small_size_group {
   /* border: 1px solid blue; */
-  display: inline-block;
-  margin-left: 60px;
+  margin-left: 50px;
   margin-top: -20px;
 }
 
-.small_size {
-  /* width: fit-content; */
+.small_size_group img {
   width: 80px;
+  height: 120px;
   padding-right: 10px;
   padding-bottom: 30px;
 }
 
 .detail {
-  border: 1px solid rgb(255, 0, 200);
-  /* display: inline-block; */
+  /* border: 1px solid rgb(255, 0, 200); */
+  display: inline-block;
+  margin-right: 50px;
+  vertical-align: middle;
 
-  /* width: 400px; */
+  width: 382px;
 }
 
 /* 右邊詳情 */
@@ -110,7 +125,7 @@ input#number {
 }
 .btn_buy {
   display: block;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 14px;
   font-weight: 400px;
   text-decoration: none;
@@ -122,24 +137,41 @@ input#number {
 
 /* line */
 .line {
-  border: 1px solid gray;
+  border: 1px dashed gray;
+  width: 1000px;
+  margin: 0 auto;
   margin-top: 60px;
 }
 .other_items {
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 70px;
+  color: #4a847e;
 }
 
+/* 相關商品 */
 .other_pic {
   border: 1px solid gray;
+  /* display: inline-block; */
+  font-size: 0;
 }
 .other_pic img {
-  width: 228px;
-  height: 288px;
-  margin-right: 10px;
+  width: 19%;
+  /* height: 288px; */
+  /* margin: 0 6px; */
+  object-fit: cover;
+
+  /* margin-right: 10px; */
 }
 .first_pic img {
-  width: 100px;
-  height: 288px;
+  margin-left: 9px;
+  /* width: 170px; */
+}
+.first_pic {
+  /* border: 1px solid red; */
+  display: inline-block;
+}
+.pic_4 {
+  display: flex;
+  justify-content: space-between;
 }

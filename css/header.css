@@ -199,3 +199,16 @@ ul.pic img {
   width: 20px;
   margin-right: 20px;
 }
+
+/* RWD  */
+@media all and (min-width: 1400px) and (max-width: 768px) {
+  header.header {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 575.98px) {
+  footer.footer {
+    width: 100%;
+  }
+} */

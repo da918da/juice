@@ -48,9 +48,43 @@
 .breadcrum_block > span {
   font-size: 16px;
   display: inline-block;
-
-  /* text-align: center; ??*/
 }
+
+/* 麵包屑位子 */
+/* nav{
+  display: block;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  width: 340px;
+  padding: 5px;
+  border: 1px solid black;
+}
+a {
+  display: inline-block;
+  width: 50px;
+  text-decoration: none;
+  border: 1px solid orange;
+}
+div.scroll-container {
+  width: 340px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid red;
+  position: relative;
+
+  height: 200px;
+  overflow-y: auto; */
+
+/* scroll-behavior: smooth; */
+/* }
+
+.scroll-page {
+  display: block;
+  height: 100%;
+  font-size: 80px;
+  border: 1px solid black;
+}  */
 
 /* shop_item1 */
 .item1 img,
@@ -186,3 +220,133 @@ h2.name {
   display: inline;
   margin: 0;
 }
+
+/* ↑ */
+
+/* #go_top */
+.arrow {
+  width: 40px;
+  height: 40px;
+  background: none;
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  color: white;
+  background-color: #4a847e;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+}
+
+/* 分頁pagination */
+div.pagination_block {
+  /* border: 1px solid red; */
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  /* position: relative;
+  left: 50%;
+  transform:translateX(-50%); */
+}
+div.pagination_block > ul.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+div.pagination_block > ul.pagination > li {
+  display: inline-block;
+}
+div.pagination_block > ul.pagination > li > a {
+  display: inline-block;
+  text-decoration: none;
+
+  border: 1px solid #dee2e6; /* 留意 */
+  border-right: 0; /* 留意：將全部的右邊框都移除 */
+
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: #4a847e;
+}
+
+/* 留意: 將最後一個 li 裡的 a，右邊框加回來 */
+/* 留意: 將最後一個 li 裡的 a，加上圓角 */
+div.pagination_block > ul.pagination > li:last-child > a {
+  border-right: 1px solid #dee2e6;
+  border-radius: 0 5px 5px 0;
+}
+/* 留意: 將第一個 li 裡的 a，加上圓角 */
+div.pagination_block > ul.pagination > li:first-child > a {
+  display: inline-block;
+  border-radius: 5px 0 0 5px;
+}
+
+div.pagination_block > ul.pagination > li > a.-on {
+  background-color: #e9ecef;
+  color: #0056b3;
+}
+
+div.pagination_block > ul.pagination > li > a:hover {
+  background-color: #e9ecef;
+  color: #0056b3;
+}
+
+/* RWD */
+img {
+  max-width: 100%;
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px) {
+  div.breadcrum {
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  div.breadcrum {
+    width: 100%;
+  }
+}
+/* 變成2欄式 */
+@media (max-width: 1200px) {
+  article.item2 div.tryflex {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+/* 
+@media screen and (max-width: 575.98px) {
+  a.card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  a.card {
+    width: 540px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  a.card {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  a.card {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  div.my_div1 {
+    width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  div.my_div1 {
+    width: 1320px;
+  }
+} */

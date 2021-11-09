@@ -188,3 +188,15 @@
   margin-top: 300px;
   margin-left: 80px;
 }
+/* RWD  */
+@media all and (min-width: 576px) and (max-width: 767.98px) {
+  footer.footer {
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  footer.footer {
+    width: 100%;
+  }
+}

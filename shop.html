@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/shop.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -79,16 +80,41 @@
           <div class="banner_shop" >
             <img src="./images/bannerg.jpg" alt="">
            </div>
+
+
+
+           <!-- <nav>
+            <a href="#page-1" class="move" data-id="page-1">1</a>
+            <a href="#page-2" class="move" data-id="page-2">2</a>
+            <a href="#page-3" class="move" data-id="page-3">3</a>
+          </nav> -->
+          
+          <!-- <div class="scroll-container">
+            <div class="scroll-page" id="page-1">1</div>
+            <div class="scroll-page" id="page-2">2</div>
+            <div class="scroll-page" id="page-3">3</div>
+          </div> -->
+
+
+
+
            <div class="breadcrum">
              <div class="breadcrum_block">
-             <a href=""><span>蔬菜濃縮汁 / </span></a>
-             <a href=""><span>水果濃縮汁 / </span></a>
-             <a href=""><span>果泥果汁 / </span></a>
-             <a href=""><span>養身果茶汁 / </span></a>
+             <a href="#page-1" class="move" data-id="page-1"><span>蔬菜濃縮汁 / </span></a>
+             <a href="#page-2" class="move" data-id="page-2"><span>水果濃縮汁 / </span></a>
+             <a href="#page-3" class="move" data-id="page-3"><span>果泥果汁 / </span></a>
+             <a href="#page-4" class="move" data-id="page-4"><span>養身果茶汁 / </span></a>
             </div>
            </div>
+
+
+
+
            <article class="item1">
-             <p class="product_name">蔬菜濃縮汁</p>
+            <div class="scroll-container">
+              <div class="scroll-page" id="page-1">
+                <p class="product_name">蔬菜濃縮汁</p>
+              </div>
              <div class="tryflex">
 
                 <a href="./shop_detail.html" target="_blank" class="card">
@@ -145,7 +171,11 @@
            
 
             <article class="item2">
-              <p class="product_name">水果濃縮汁</p>
+              <div class="scroll-container">
+                <div class="scroll-page" id="page-2">
+                  <p class="product_name">水果濃縮汁</p>
+                </div>
+
               <div class="tryflex">
 
               <a href="#" target="_blank" class="card">
@@ -202,7 +232,11 @@
 
 
            <article class="item3">
-            <p class="product_name">果泥果汁</p>
+            <div class="scroll-container">
+              <div class="scroll-page" id="page-3">
+                <p class="product_name">果泥果汁</p>
+              </div>
+
             <div class="tryflex">
 
 
@@ -259,7 +293,10 @@
 
 
          <article class="item4">
-          <p class="product_name">養身果茶汁</p>
+          <div class="scroll-container">
+            <div class="scroll-page" id="page-4">
+               <p class="product_name">養身果茶汁</p>
+            </div>
           
         <div class="tryflex">
           <a href="http://tw.yahoo.com" target="_blank" class="card">
@@ -312,6 +349,26 @@
 
        </article>
 
+       <div class="pagination_block">
+        <ul class="pagination">
+          <li><a href="#">&lt;</a></li>
+          <li><a href="#" class="-on">1</a></li>
+          <li><a href="#" >2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#">10</a></li>
+          <li><a href="#">&gt;</a></li>
+        </ul>
+      </div>
+
+    <button type="button" id="go_top" class="arrow">↑</button>
+
+
            
 
 
@@ -339,6 +396,12 @@
   
 </footer>
   
-    
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+<!-- <script>
+  AOS.init();
+</script> -->
+
+<script src="./js/index.js"></script>
+
 </body>
 </html>

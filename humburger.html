@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #000;
+      }
+
+      #toggler:checked + label .box {
+        background-color: aquamarine;
+      }
+      #toggler {
+        display: none;
+      }
+      .hamburger-container {
+        /* border: 1px solid red; */
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 16px;
+        left: 20px;
+      }
+      .hamburger-container span {
+        display: block;
+        height: 1px;
+        background-color: #fff;
+        position: relative;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+        top: 0;
+      }
+      .hamburger-container span:nth-child(2) {
+        margin-top: 7px;
+      }
+      /* toggler勾選交叉狀態 */
+      #toggler:checked + label .hamburger-container span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 4px;
+        transition: top 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+      }
+
+      #toggler:checked + label .hamburger-container span:nth-child(2) {
+        transform: rotate(-45deg);
+        top: -4px;
+        transition: top 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+      }
+
+      .header {
+        background-color: rgb(17, 109, 78);
+        height: 44px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .food {
+        background-color: rgba(33, 138, 46, 0.32);
+        width: 300px;
+        height: 100vh;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        transform: scaleY(0);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform-origin: 50% 0;
+        opacity: 0;
+      }
+      #toggler:checked ~ .food {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+      ul {
+        margin-top: 1rem;
+        list-style: none;
+        /* border: 1px solid red; */
+      }
+      ul li {
+        /* border: 1px solid #fff; */
+        padding: 10px 0;
+        /* width: 200px; */
+      }
+      li > a {
+        text-decoration: none;
+        color: seagreen;
+        font-size: 24px;
+        border-bottom: 1px solid white;
+      }
+      li > a:hover {
+        color: rgb(255, 120, 24);
+      }
+      .nav_img {
+        width: 70px;
+      }
+      .nav_scoail_img {
+        width: 20px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <input type="checkbox" id="toggler" />
+      <label for="toggler">
+        <div class="hamburger-container">
+          <span></span>
+          <span></span>
+        </div>
+      </label>
+      <div class="food">
+        <ul>
+          <li>
+            <a href="./index.html"
+              ><img src="./images/index_img/logook-04.png" class="nav_img"
+            /></a>
+          </li>
+          <li><a href="./brand.html">本然品牌</a></li>
+          <li><a href="./customerize.html">客製果汁</a></li>
+          <li><a href="./food.html">嚴選食材</a></li>
+          <li><a href="./news.html">最新消息</a></li>
+          <li><a href="./shop.html">Menu</a></li>
+          <li>
+            <a href="#"
+              ><img
+                src="./images/index_img/facebook.png"
+                class="nav_scoail_img"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./images/index_img/instagram.png"
+                class="nav_scoail_img"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>

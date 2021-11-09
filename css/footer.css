@@ -19,7 +19,7 @@
   align-items: center;
   background-color: #c7dec2;
   margin: 0 auto;
-  margin-top: 300px;
+  margin-top: 150px;
 }
 .adress,
 .time {
@@ -38,3 +38,15 @@
   margin: 0 auto;
   width: 1200px;
 }
+
+/* RWD */
+@media all and (min-width: 576px) and (max-width: 767.98px) {
+  footer.footer {
+    width: 540px;
+  }
+}
+
+@media screen and (max-width: 575.98px){
+ footer.footer{
+   width: 100%;
+ }

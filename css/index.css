@@ -1,5 +1,6 @@
 @import "./footer.css";
 @import "./header.css";
+/* @import "./" */
 
 * {
   /* margin: o auto; */
@@ -76,7 +77,6 @@
   /* border: 1px solid green; */
   border-radius: 10px;
   padding: 10px;
-  margin-bottom: 100px;
 }
 
 /* content2 */
@@ -141,6 +141,8 @@ div.insist,
 
   /* height: 150px; */
 }
+
+/* 動畫 */
 
 .content2 p {
   font-size: 24px;
@@ -215,6 +217,27 @@ div.number1,
   height: 95px;
   background-color: #4a847e;
   color: white;
+  z-index: 1;
+}
+.number_block {
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+div.number1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 85px;
+  left: 0;
+  height: 150%;
+  width: 100%;
+  background-image: url(../images/index_img/wave_02-01.png);
+  background-repeat: repeat-x;
+  background-position: 0 50px;
+  animation: cupwave 60s linear infinite;
+  transition: 5s;
+  z-index: -1;
 }
 
 .happy_block {
@@ -405,7 +428,7 @@ p.ml {
 
 .green img {
   margin-left: 600px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 .green > h3 {
   position: absolute;
@@ -482,4 +505,33 @@ div.brand p {
 }
 .box {
   position: relative;
+}
+
+/* ↑ */
+
+/* #go_top */
+.arrow {
+  width: 40px;
+  height: 40px;
+  background: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  background-color: #4a847e;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+}
+/* 關掉漢堡 */
+.hamburger-container {
+  /* border: 1px solid red; */
+  /* display: none; */
+}
+@media all and (min-width: 1400px) and (max-width: 768px) {
+  header.header {
+    display: none;
+  }
 }

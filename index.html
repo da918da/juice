@@ -7,6 +7,7 @@
     <title>本然果汁</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/header.css" />
+   <link rel="stylesheet" href="./css/hamburger.css">
     
   </head>
   <body>
@@ -78,6 +79,38 @@
       </nav>
     </header>
 
+    <!-- hamburger -->
+
+    <div class="header">
+      <input type="checkbox" id="toggler" />
+      <label for="toggler">
+        <div class="hamburger-container">
+          <span></span>
+          <span></span>
+        </div>
+      </label>
+      <div class="hamburger_block">
+        <ul class="li_items">
+          <li>
+            <a href="./index.html"
+              ><img src="./images/index_img/logook-04.png" class="nav_img"
+            /></a>
+          </li>
+          <li><a href="./brand.html">本然品牌</a></li>
+          <li><a href="./customerize.html">客製果汁</a></li>
+          <li><a href="./food.html">嚴選食材</a></li>
+          <li><a href="./news.html">最新消息</a></li>
+          <li><a href="./shop.html">Menu</a></li>
+          <li class="nav_socail_img">
+            <a href="#"><img src="./images/index_img/facebook.png"/></a>
+          </li>
+          <li class="nav_socail_img">
+            <a href="#"><img src="./images/index_img/instagram.png"/></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="banner">
       <!-- <img src="./images/index_img/banner01-02.png" /> -->
     </div>
@@ -112,6 +145,7 @@
         <div class="insist">
           <img src="./images/index_img/icon_content2-09.png" />
           <p>堅持</p>
+          <div data-aos="fade-right"></div>
             </div>
             <div class="plus1">
               <img src="./images/brand/Plus.png">
@@ -126,12 +160,14 @@
               <img src="./images/brand/Plus.png">
             </div>
 
+    <div data-aos="fade-left">
             <div class="health">
           <img src="./images/index_img/icon_content2-11.png" />
           <p>健康</p>
           </div>
         </div>
       </div>
+    </div>
 
       <div class="plus3">
         <img src="./images/brand/equal.png" alt="">
@@ -273,6 +309,8 @@
     </div>
     </article>
 
+    <button type="button" id="go_top" class="arrow">↑</button>
+
 
 
 </main>
@@ -294,5 +332,8 @@
     </p>
   
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+
   </body>
 </html>
