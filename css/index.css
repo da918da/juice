@@ -74,12 +74,14 @@
 }
 .season img {
   width: 250px;
+  height: 360px;
+  object-fit: contain;
   /* border: 1px solid green; */
   border-radius: 10px;
   padding: 10px;
 }
 
-/* content2 */
+/* =====品牌介紹 =====*/
 
 .content2 {
   /* border: 1px solid purple; */
@@ -159,7 +161,7 @@ div.insist,
   padding: 40px 50px;
   display: inline-block;
   position: absolute;
-  right: 0px;
+  left: 887px;
   bottom: 160px;
 
   /* position: absolute;
@@ -169,8 +171,8 @@ div.insist,
   font-size: 36px;
   display: inline-block;
   position: absolute;
-  top: -655px;
-  right: 100px;
+  left: 892px;
+  top: -786px;
   color: #4a847e;
 }
 /* margin-block-start: 1em;

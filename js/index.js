@@ -6,7 +6,7 @@ $(function(){
       e.preventDefault();
       $('html, body').animate({
         scrollTop: 0
-      }, 750);
+      }, 1000);
     });
     
   });

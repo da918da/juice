@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  /* outline: 1px solid red; */
+  margin: 0;
 }
 .footer > a {
   border: 1px solid red;
@@ -39,14 +41,16 @@
   width: 1200px;
 }
 
-/* RWD */
-@media all and (min-width: 576px) and (max-width: 767.98px) {
-  footer.footer {
-    width: 540px;
+/* RWD  */
+@media (max-width: 575.98px) {
+  .footer_block {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 575.98px){
- footer.footer{
-   width: 100%;
- }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .footer_block {
+    width: 540px;
+    padding: 30px 20px;
+  }
+}

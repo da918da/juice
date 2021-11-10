@@ -9,6 +9,12 @@
   margin: 0 auto;
   /* height: 9000px; */
 }
+
+@media (max-width: 767px) {
+  .main {
+    width: 540px;
+  }
+}
 .banner_shop {
   /* border: 1px solid black; */
   width: 1200px;
@@ -19,8 +25,16 @@
   width: 100%;
   height: 400px;
   object-fit: cover;
-
   margin: 0 auto;
+}
+@media (min-width: 576px) and (max-width: 800px) {
+  .banner_shop {
+    /* border: 1px solid blue; */
+    width: 540px;
+    /* object-fit: contain; */
+    height: 300px;
+    overflow: hidden;
+  }
 }
 .breadcrum {
   /* border: 1px solid black; */
@@ -48,6 +62,9 @@
 .breadcrum_block > span {
   font-size: 16px;
   display: inline-block;
+}
+div.scroll-container {
+  /* border: 1px solid green; */
 }
 
 /* 麵包屑位子 */
@@ -107,6 +124,7 @@ div.scroll-container {
 
 /* 商品圖片平均分配寫法一 flex*/
 .tryflex {
+  /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
 }
@@ -194,7 +212,7 @@ a.card:hover div.other_notes {
 }
 
 .product_group {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 1200px;
   margin-bottom: 120px;
   font-size: 0;
@@ -209,13 +227,13 @@ a.card:hover div.other_notes {
   clear: both;
 }
 .goshop {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   flex-flow: column wrap;
   width: 300px;
 }
 h2.name {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 300px;
   display: inline;
   margin: 0;
@@ -294,28 +312,45 @@ div.pagination_block > ul.pagination > li > a:hover {
   color: #0056b3;
 }
 
+@media (min-width: 576px) and (max-width: 800px) {
+  div.pagination_block {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -140px;
+  }
+}
 /* RWD */
 img {
   max-width: 100%;
 }
-
-@media all and (min-width: 576px) and (max-width: 767.98px) {
+/* breadcrum */
+@media (min-width: 576px) and (max-width: 800px) {
   div.breadcrum {
     width: 540px;
   }
 }
 
-@media screen and (max-width: 575.98px) {
+@media (max-width: 575.98px) {
   div.breadcrum {
     width: 100%;
   }
 }
 /* 變成2欄式 */
-@media (max-width: 1200px) {
-  article.item2 div.tryflex {
-    flex-direction: column;
+@media (max-width: 767px) {
+  article.item1 div.tryflex,
+  article.item2 div.tryflex,
+  article.item3 div.tryflex,
+  article.item4 div.tryflex {
+    /* flex-direction: column; */
     flex-wrap: wrap;
-    width: 100%;
+    /* width: 400px; */
+    object-fit: contain;
+    /* margin-bottom: 10px; */
+  }
+  a.card {
+    width: calc((100% - 20px) / 2);
+    /* border: 1px solid red; */
+    margin-bottom: 85px;
   }
 }
 
