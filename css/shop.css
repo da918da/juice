@@ -3,21 +3,17 @@
 * {
   box-sizing: border-box;
 }
+
 .main {
   /* border: 1px solid orange; */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   /* height: 9000px; */
 }
 
-@media (max-width: 767px) {
-  .main {
-    width: 540px;
-  }
-}
 .banner_shop {
   /* border: 1px solid black; */
-  width: 1200px;
+  max-width: 1200px;
 }
 .banner_shop img {
   /* border: 1px solid black; */
@@ -27,15 +23,42 @@
   object-fit: cover;
   margin: 0 auto;
 }
-@media (min-width: 576px) and (max-width: 800px) {
+.head {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 575.98px) {
   .banner_shop {
-    /* border: 1px solid blue; */
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .banner_shop {
     width: 540px;
-    /* object-fit: contain; */
     height: 300px;
     overflow: hidden;
   }
 }
+
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+  .banner_shop {
+    width: 720px;
+    height: 300px;
+    overflow: hidden;
+  }
+} */
+/* @media (min-width: 992px) and (max-width: 1199.98px) {
+  .banner_shop {
+    width: 960px;
+    height: 300px;
+    overflow: hidden;
+  }
+} */
+
 .breadcrum {
   /* border: 1px solid black; */
   /* width: 1200px; */
@@ -58,11 +81,43 @@
   margin: 0 auto;
   display: inline-block;
 }
+.breadcrum_block > a:hover {
+  color: rgb(253, 190, 74);
+}
+/* a.-on {
+  color: var(--orange);
+} */
+.breadcrum_block > a {
+  /* color: var(--orange); */
+}
 
 .breadcrum_block > span {
   font-size: 16px;
   display: inline-block;
 }
+
+@media (max-width: 575.98px) {
+  .breadcrum {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .breadcrum {
+    width: 540px;
+  }
+}
+
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+  .breadcrum {
+    width: 720px;
+  }
+} */
+/* @media (min-width: 992px) and (max-width: 1199.98px) {
+  .breadcrum {
+    width: 960px;
+  }
+} */
+
 div.scroll-container {
   /* border: 1px solid green; */
 }
@@ -108,8 +163,8 @@ div.scroll-container {
 .item2 img,
 .item3 img,
 .item4 img {
-  width: 280px;
-  height: 350px;
+  width: 100%;
+  height: 30vh;
   object-fit: cover;
 }
 .item1,
@@ -167,10 +222,10 @@ div.scroll-container {
 
 .card {
   /* border: 1px solid red; */
-  display: inline-block;
-  display: flex;
+  display: block;
+  /* display: flex; */
   justify-content: space-between;
-  width: 280px;
+  width: 23%;
   font-size: 0;
   position: relative;
 
@@ -323,8 +378,8 @@ div.pagination_block > ul.pagination > li > a:hover {
 img {
   max-width: 100%;
 }
-/* breadcrum */
-@media (min-width: 576px) and (max-width: 800px) {
+/* =====breadcrum===== */
+/* @media (min-width: 576px) and (max-width: 800px) {
   div.breadcrum {
     width: 540px;
   }
@@ -334,8 +389,28 @@ img {
   div.breadcrum {
     width: 100%;
   }
+} */
+/* =====漢堡===== */
+
+@media (min-width: 300px) and (max-width: 767.98px) {
+  div.hamburger-container {
+    /* border: 1px solid red; */
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 0;
+  }
+  .hamburger_block {
+    /* border: 1px solid red; */
+    top: 20px;
+  }
 }
-/* 變成2欄式 */
+/* =====變成2欄式===== */
+@media (max-width: 767px) {
+  .main {
+    width: 540px;
+  }
+}
 @media (max-width: 767px) {
   article.item1 div.tryflex,
   article.item2 div.tryflex,
@@ -345,7 +420,6 @@ img {
     flex-wrap: wrap;
     /* width: 400px; */
     object-fit: contain;
-    /* margin-bottom: 10px; */
   }
   a.card {
     width: calc((100% - 20px) / 2);
@@ -353,6 +427,36 @@ img {
     margin-bottom: 85px;
   }
 }
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  .item1 img,
+  .item2 img,
+  .item3 img,
+  .item4 img {
+    width: 500px;
+  }
+}
+/* @media (max-width: 575.98px) {
+  .breadcrum {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .breadcrum {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .breadcrum {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .breadcrum {
+    width: 960px;
+  }
+} */
 
 /* 
 @media screen and (max-width: 575.98px) {

@@ -10,10 +10,12 @@
   margin: 0 auto;
   /* height: 9000px; */
 }
-.banner_shop {
-  /* border: 1px solid black; */
-  width: 1200px;
-}
+
+/* @media (min-width: 576px) and (max-width: 800px) {
+    .main {
+  border: 1px solid blue;
+  width: 540px;
+} */
 .banner_shop img {
   /* border: 1px solid black; */
   /* width: 1200px; */
@@ -22,6 +24,25 @@
   object-fit: cover;
 
   margin: 0 auto;
+}
+
+@media (min-width: 576px) and (max-width: 800px) {
+  .banner_shop {
+    /* border: 1px solid blue; */
+    width: 540px;
+    /* object-fit: contain; */
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 320px) {
+  .banner_shop {
+    /* border: 1px solid blue; */
+    width: 100%;
+    /* object-fit: contain; */
+    margin: 0 auto;
+  }
 }
 
 .main_content {

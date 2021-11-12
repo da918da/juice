@@ -3,11 +3,18 @@
 }
 .header {
   background-color: #c7dec2;
-  width: 1200px;
+  width: 100%;
+  min-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   /* border: 1px solid blue; */
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .header {
+    display: none;
+  }
 }
 a.logo {
   /* border: 1px solid black; */
@@ -21,8 +28,10 @@ a.logo img {
 }
 
 .nav {
+  width: 1200px;
   /* border: 1px solid blue; */
   font-size: 0;
+  margin: 0 auto;
 }
 .nav::after {
   content: "";
@@ -201,14 +210,48 @@ ul.pic img {
 }
 
 /* RWD  */
-@media all and (min-width: 1400px) and (max-width: 768px) {
-  header.header {
-    display: none;
+/* =====標題項目 ====== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  ul.food li {
+    margin-right: 5px !important;
   }
 }
 
-/* @media screen and (max-width: 575.98px) {
-  footer.footer {
+@media (min-width: 768px) and (max-width: 1000px) {
+  ul.food li {
+    margin-right: 1px !important;
+  }
+  a.logo img {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  ul.food li {
+    margin-right: 20px !important;
+  }
+  a.logo img {
+    margin-left: 20px;
+  }
+}
+
+/* @media (max-width: 575.98px) {
+  .banner {
     width: 100%;
+    margin-bottom: -120px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header {
+    width: 960px;
   }
 } */

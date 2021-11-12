@@ -11,17 +11,21 @@
   background-image: url(../images/index_img/banner01-02.png);
 }
 .banner {
-  margin: 0 auto;
   /* border: 1px solid red; */
-  width: 1200px;
+  min-width: 1200px;
   height: 420px;
+  margin: 0 auto;
+
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom: 120px;
 }
 
 .banner img {
-  width: 100%;
+  min-width: 1200px;
+
+  /* width: 100%; */
+  margin: 0 auto;
   /* padding-bottom: 120px; */
 }
 
@@ -532,8 +536,59 @@ div.brand p {
   /* border: 1px solid red; */
   /* display: none; */
 }
-@media all and (min-width: 1400px) and (max-width: 768px) {
+/* @media (min-width: 1400px) and (max-width: 768px) {
   header.header {
     display: none;
   }
+} */
+
+img {
+  max-width: 100%;
 }
+
+@media (max-width: 575.98px) {
+  .banner {
+    width: 100%;
+    margin-bottom: -120px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .banner {
+    width: 540px;
+    margin-bottom: -120px;
+  }
+  .header {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .banner {
+    width: 720px;
+    margin-bottom: -80px;
+  }
+  ul.food li {
+    display: inline-block;
+    margin-right: 10px !important;
+    padding: 5px 12px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .banner {
+    width: 960px;
+    margin-bottom: -20px;
+  }
+  ul.food li {
+    margin-right: 10px;
+  }
+}
+/* @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .banner {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .banner {
+    width: 1320px;
+  }
+} */
