@@ -6,7 +6,7 @@
 }
 .main {
   border: 1px solid orange;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   /* height: 9000px; */
 }
@@ -26,27 +26,8 @@
   margin: 0 auto;
 }
 
-@media (min-width: 576px) and (max-width: 800px) {
-  .banner_shop {
-    /* border: 1px solid blue; */
-    width: 540px;
-    /* object-fit: contain; */
-    height: 300px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 320px) {
-  .banner_shop {
-    /* border: 1px solid blue; */
-    width: 100%;
-    /* object-fit: contain; */
-    margin: 0 auto;
-  }
-}
-
 .main_content {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 50px;
   border: 1px solid gray;
@@ -103,9 +84,11 @@
 /* 右邊詳情 */
 .name {
   display: inline-block;
+  margin-bottom: 30px;
 }
 .p {
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 /* 數量 */
@@ -156,10 +139,29 @@ input#number {
   padding: 8px 12px;
 }
 
+/* @media (min-width: 575.98px) and (max-width: 993px) {
+  .main_content {
+  }
+  .big_size {
+  
+
+    width: 600px;
+    margin: 0 250px;
+  }
+  .small_size_group {
+   
+    display: inline-block;
+    margin-left: 300px;
+  }
+  .detail {
+    margin-left: 300px;
+  }
+} */
+
 /* line */
 .line {
   border: 1px dashed gray;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 60px;
 }
@@ -167,6 +169,7 @@ input#number {
   font-size: 24px;
   text-align: center;
   margin-top: 70px;
+  margin-bottom: 25px;
   color: #4a847e;
 }
 
@@ -195,4 +198,29 @@ input#number {
 .pic_4 {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .detail {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    width: 400px;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    /* align-items: center; */
+    /* margin-left: 50%; */
+  }
+  .name {
+    /* width: 100%;
+    margin: 0 auto; */
+  }
+  .aside {
+    /* border: 1px solid red; */
+    width: 500px;
+    /* object-fit: contain; */
+    margin: 0 auto;
+    display: block;
+  }
 }

@@ -276,6 +276,7 @@ a.card:hover div.other_notes {
 }
 .product_name {
   font-size: 28px;
+  margin-bottom: 12px;
 }
 .product_name::before {
   /* content: "a"; */

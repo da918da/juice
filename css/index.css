@@ -12,19 +12,18 @@
 }
 .banner {
   /* border: 1px solid red; */
-  min-width: 1200px;
-  height: 420px;
+  width: 100%;
+  max-width: 1440px;
+  height: 445px;
   margin: 0 auto;
-
   background-size: contain;
   background-repeat: no-repeat;
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 }
 
 .banner img {
-  min-width: 1200px;
-
-  /* width: 100%; */
+  min-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   /* padding-bottom: 120px; */
 }
@@ -207,8 +206,8 @@ margin-inline-end: 0px; */
   color: #4a847e;
   display: flex;
   justify-content: center;
-  margin-top: 8px;
-  /* align-items: center;  �∪��㚁� */
+  margin-bottom: 25px;
+  /* border: 1px solid red; */
 }
 div.number1,
 .number2,
@@ -261,7 +260,7 @@ div.number1::after {
   font-size: 18px;
   position: relative;
   left: 120px;
-  top: -5px;
+  top: 3px;
 }
 .happy_block > a > span {
   /* border: 1px solid black; */
@@ -269,7 +268,7 @@ div.number1::after {
   width: 260px;
   position: relative;
   left: 120px;
-  bottom: 20px;
+  bottom: -5px;
   color: black;
   font-size: 14px;
   /* margin-right: 20px; */
@@ -315,7 +314,7 @@ div.number1::after {
   display: inline-block;
   position: relative;
   left: 650px;
-  top: -490px;
+  top: -464px;
   /* border: 1px solid red; */
 }
 p.text {
@@ -325,7 +324,7 @@ p.text {
   width: 450px;
   position: relative;
   left: 650px;
-  top: -500px;
+  top: -460px;
   height: 0;
 }
 
@@ -338,7 +337,7 @@ h1.net {
   text-align: center;
   position: relative;
   left: 950px;
-  top: -540px;
+  top: -500px;
   /* top: -90px; */
   /* float: right;  憌𥕦枂�鳴� */
   /* width: calc(100% - 100px - 445px); */
@@ -357,7 +356,7 @@ p.ml {
   /* margin-left: 1000px; */
   position: relative;
   left: 720px;
-  top: -480px;
+  top: -445px;
 }
 .button {
   background-color: #4a847e;
@@ -365,7 +364,7 @@ p.ml {
   padding: 8px 12px;
   color: white;
   position: absolute;
-  bottom: 200px;
+  bottom: 140px;
   right: 200px;
   font-size: 16px;
 }
@@ -373,6 +372,7 @@ p.ml {
   width: 600px;
   margin: 0;
   /* border: 1px solid red; */
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .boxjuice_green {
   position: relative;
@@ -390,9 +390,15 @@ p.ml {
 .orange {
   /* border: 1px solid blue; */
   display: inline-block;
+  margin-top: 45px;
 }
 .orange img {
   margin-left: 600px;
+}
+.dragon,
+.green {
+  /* border: 1px solid red; */
+  margin-top: 40px;
 }
 
 .orange > h3,
@@ -405,7 +411,7 @@ p.ml {
 .orange > h3 {
   position: absolute;
   left: 512px;
-  top: 100px;
+  top: 140px;
 }
 .orange > p {
   font-size: 16px;
@@ -413,13 +419,13 @@ p.ml {
   background-color: #fff1a8;
   padding: 20px;
   position: absolute;
-  top: 280px;
+  top: 310px;
   left: 150px;
 }
 .dragon > h3 {
   position: absolute;
   left: 530px;
-  top: 500px;
+  top: 575px;
 }
 .dragon > p {
   font-size: 16px;
@@ -428,7 +434,7 @@ p.ml {
   background-color: #ffb5b5;
   padding: 20px;
   position: absolute;
-  top: 680px;
+  top: 760px;
   left: 700px;
 }
 
@@ -439,7 +445,7 @@ p.ml {
 .green > h3 {
   position: absolute;
   left: 400px;
-  top: 900px;
+  top: 1024px;
 }
 .green > p {
   font-size: 16px;
@@ -449,16 +455,30 @@ p.ml {
   background-color: #adbb8a;
   padding: 20px;
   position: absolute;
-  top: 1000px;
+  top: 1150px;
   left: 150px;
+}
+@keyframes move_to_right {
+  0% {
+    margin-left: 20px;
+  }
+  50% {
+    margin-left: 50px;
+  }
+  100% {
+    margin-left: 100px;
+  }
 }
 .line {
   height: 1px;
   width: 320px;
   background-color: black;
   position: absolute;
-  bottom: 371px;
+  bottom: 320px;
   right: 248px;
+  /* animation-name: move_to_right;
+  animation-duration: 1s;
+  animation-timing-function: linear; */
 }
 .net_block {
   position: absolute;
@@ -470,12 +490,17 @@ p.ml {
   background-color: #4a847e;
   position: absolute;
   top: 400px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 div.brand {
   position: absolute;
   bottom: 250px;
   left: 420px;
+  animation-name: fadeInUp;
+  animation: fadeInUp 1.3s ease 1;
+  visibility: visible;
 }
+
 div.brand p {
   font-size: 24px;
   margin: 10px 0;
@@ -549,13 +574,15 @@ img {
 @media (max-width: 575.98px) {
   .banner {
     width: 100%;
-    margin-bottom: -120px;
+    margin-bottom: -200px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .banner {
     width: 540px;
-    margin-bottom: -120px;
+    width: 100%;
+
+    margin-bottom: -150px;
   }
   .header {
     width: 540px;
@@ -564,6 +591,8 @@ img {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .banner {
     width: 720px;
+    width: 100%;
+
     margin-bottom: -80px;
   }
   ul.food li {
@@ -576,12 +605,34 @@ img {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .banner {
     width: 960px;
+    width: 100%;
+
     margin-bottom: -20px;
   }
   ul.food li {
     margin-right: 10px;
   }
 }
+
+/* =====標題項目 ====== */
+/* @media (min-width: 576px) and (max-width: 767.98px) {
+  .banner img {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .banner img {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .banner img {
+    width: 960px;
+  }
+} */
+
 /* @media (min-width: 1200px) and (max-width: 1399.98px) {
   .banner {
     width: 1140px;

@@ -202,3 +202,8 @@ p.everyday {
   letter-spacing: 10px;
   margin: 0;
 }
+div.step1 img,
+div.step2 img,
+div.step3 img {
+  width: 55px;
+}
