@@ -193,13 +193,17 @@ margin-inline-end: 0px; */
   /* border: 1px solid red; */
 }
 .content3 img {
-  width: 386px;
+  border: 1px solid black;
+
+  width: 350px;
   height: 550px;
+  /* display: flex;
+  justify-content: space-between; */
 }
-.pic_green {
-  /* border: 1px solid blue; */
+/* .pic_green {
+  border: 1px solid blue;
   margin-left: 20px;
-}
+} */
 
 .content3 > h1 {
   font-size: 36px;
@@ -209,28 +213,59 @@ margin-inline-end: 0px; */
   margin-bottom: 25px;
   /* border: 1px solid red; */
 }
-div.number1,
-.number2,
-.number3 {
-  /* border: 1px solid red; */
+.happy_block {
+  border: 1px solid rgb(109, 241, 213);
+}
+
+.thin {
+  position: absolute;
+  font-size: 30px;
+  width: 350px;
+  height: 125px;
+  background-color: white;
+  opacity: 0.7;
+  bottom: 225px;
+  display: none;
+}
+.thin:hover {
+  display: block;
+}
+
+.happy_block a:hover .thin {
+  display: block;
+}
+
+.thin span {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 45px;
+  color: black;
+  /* display: none; */
+}
+/* ===== card-bottom  下方文字與數字 =====*/
 
+.card-bottom {
+  border: 1px solid blue;
+  font-size: 16px;
+}
+.card-bottom-left {
   font-size: 50px;
   width: 95px;
   height: 95px;
   background-color: #4a847e;
   color: white;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .number_block {
   transition: all 0.5s;
   position: relative;
   overflow: hidden;
 }
 div.number1::after {
-  content: "";
+  /* content: "";
   display: block;
   position: absolute;
   top: 85px;
@@ -242,7 +277,7 @@ div.number1::after {
   background-position: 0 50px;
   animation: cupwave 60s linear infinite;
   transition: 5s;
-  z-index: -1;
+  z-index: -1; */
 }
 
 .happy_block {
@@ -505,35 +540,7 @@ div.brand p {
   font-size: 24px;
   margin: 10px 0;
 }
-.thin {
-  position: absolute;
-  font-size: 30px;
-  width: 386px;
-  height: 125px;
-  background-color: white;
-  opacity: 0.7;
-  bottom: 120px;
-}
-.thin:hover {
-  display: block;
-}
 
-.thin {
-  display: none;
-  /* border: 1px solid black; */
-}
-
-.happy_block a:hover .thin {
-  display: block;
-}
-
-.thin span {
-  display: flex;
-  justify-content: center;
-  padding-top: 45px;
-  color: black;
-  /* display: none; */
-}
 .box {
   position: relative;
 }

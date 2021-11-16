@@ -71,7 +71,7 @@
 p.everyday {
   /* border: 1px solid red; */
   width: 692px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   display: inline-block;
   margin: 0;
@@ -160,37 +160,51 @@ p.everyday {
 .customerize {
   /* border: 1px solid black; */
   width: 1200px;
-  height: 2500px;
-  margin-top: 300px;
-  background-image: url(../images/cutomerize/custo.JPG);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+  height: 1860px;
+  margin-top: 220px;
 
   position: relative;
+  /* top: 20px; */
 }
 
 .customerize img {
-  width: 1200px;
+  max-width: 1200px;
 }
 .green_banner {
   /* border: 1px solid red; */
-  margin-bottom: 300px;
+  z-index: 10;
+
+  /* margin-bottom: 50px; */
+  /* background-image: url(../images/cutomerize/line_bac.PNG); */
+}
+.line {
+  background-image: url(../images/cutomerize/line_bac.PNG);
+  /* border: 1px solid yellow; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  margin-top: -815px;
+
+  /* position: absolute;
+  top: 550px;
+  z-index: 1000; */
 }
 .orange_banner {
   /* border: 1px solid red; */
-  margin-top: 400px;
+  margin-top: -555px;
 }
 .fresh {
   /* border: 1px solid black; */
   position: absolute;
-  top: 880px;
+  top: 512px;
   left: 60px;
 }
 .your {
   position: absolute;
-  top: 1000px;
-  left: 120px;
+  top: 601px;
+  left: 125px;
 }
 
 .customerize p {
@@ -202,8 +216,89 @@ p.everyday {
   letter-spacing: 10px;
   margin: 0;
 }
+/* 客製化果汁icon */
+
 div.step1 img,
 div.step2 img,
 div.step3 img {
-  width: 55px;
+  /* border: 1px solid pink; */
+  width: 65px;
+}
+div.step1 img {
+  /* position: absolute; */
+  /* float: right; */
+}
+.step {
+  /* border: 1px solid green; */
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  /* vertical-align: bottom;? */
+  /* text-align: center; ? */
+  /* display: inline-block; */
+}
+.step1 {
+  /* border: 1px solid rgb(16, 184, 111); */
+  display: inline-block;
+  position: absolute;
+  top: 535px;
+  right: 240px;
+  width: 289px;
+}
+.num_group {
+  display: flex;
+  color: #4a847e;
+}
+.step_num {
+  /* border: 1px solid red; */
+  font-size: 50px;
+  /* display: inline-block; */
+}
+.step1_icon01 {
+  display: block;
+  margin-left: 70px;
+}
+.step1_icon02 {
+  display: block;
+  margin-left: 150px;
+  margin-top: -24px;
+}
+.step2 {
+  /* border: 1px solid rgb(0, 51, 255); */
+  display: inline-block;
+  position: absolute;
+  top: 909px;
+  left: 288px;
+  width: 259px;
+}
+.step2_icon {
+  display: block;
+  margin-left: 92px;
+  margin-top: -24px;
+}
+.step3 {
+  /* border: 1px solid red; */
+  display: inline-block;
+  position: absolute;
+  top: 1140px;
+  left: 803px;
+  width: 259px;
+}
+.step3_icon01 {
+  display: block;
+  margin-left: 60px;
+  margin-top: -25px;
+
+  /* margin-top: -24px; */
+}
+.step3_icon02 {
+  display: block;
+  margin-left: 130px;
+  margin-top: -25px;
+}
+.customerize_title {
+  color: #4a847e;
+  font-size: 24px;
+  margin-bottom: 5px;
 }

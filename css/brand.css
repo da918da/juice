@@ -161,7 +161,7 @@
   /* border: 1px solid yellow; */
   display: inline-block;
   vertical-align: top;
-  margin: 0 30px;
+  margin: 100px 29.6px;
 
   /* display: inline-flex;
   justify-content: flex-start; */
@@ -169,6 +169,8 @@
 .adress_text p {
   /* border: 1px solid red; */
   font-size: 18px;
+  margin-bottom: 10px;
+
   color: white;
   width: fit-content;
   /* display: inline-flex; */
@@ -204,18 +206,18 @@ p.information {
   /* transform: translateX(-50%);
   margin: 0 auto; */
 }
-.certificate img {
+.owl-carousel img {
   /* border: 1px solid blue; */
-  width: 214px;
+  width: 100px;
   /* background-color: #4a847e; */
 }
-.certificate {
+.owl-carousel {
   border: 1px solid red;
   display: flex;
   justify-content: space-around;
   background-color: #4a847e;
-  transform: translate3d(220px, 0px, 0px);
-  transition: all 0.25s ease 0s;
+  /* transform: translate3d(220px, 0px, 0px);
+  transition: all 0.25s ease 0s; */
   /* width: 3172 px; */
 }
 .article3 > p {

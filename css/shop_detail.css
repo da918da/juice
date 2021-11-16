@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .main {
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   max-width: 1200px;
   margin: 0 auto;
   /* height: 9000px; */
@@ -179,13 +179,24 @@ input#number {
   /* display: inline-block; */
   font-size: 0;
 }
-.other_pic img {
+
+.pic_4 div {
   width: 19%;
+  overflow: hidden;
+}
+.other_pic img {
+  width: 100%;
+  height: 100%;
   /* height: 288px; */
   /* margin: 0 6px; */
   object-fit: cover;
+  transition: transform 1s;
 
   /* margin-right: 10px; */
+}
+.other_pic img:hover {
+  /* transform: all 1s; */
+  transform: scale(1.1);
 }
 .first_pic img {
   margin-left: 9px;
