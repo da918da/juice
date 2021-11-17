@@ -84,27 +84,27 @@
   padding: 10px;
 }
 
-/* =====品牌介紹 =====*/
+/* ========== 品牌介紹 ==========*/
 
 .content2 {
-  /* border: 1px solid purple; */
+  border: 1px solid purple;
+  display: flex;
+  margin-top: 70px;
   position: relative;
+}
+.content2-left {
+  border: 1px solid red;
+}
+.content2-right {
+  border: 1px solid blue;
+  /* margin-top: 100px; */
 }
 .bagr {
   /* border: 1px solid red; */
 }
 
-/* .content2 > h1 {
-  font-size: 36px;
-  color: #4a847e;
-  display: inline-block;
-  border: 1px solid blue;
-  vertical-align: top;
-  position: relative;
-} */
 .icon3 {
   /* border: 1px solid red; */
-  display: inline-block;
   display: flex;
   flex-flow: row nowrap;
   position: absolute;
@@ -112,7 +112,7 @@
   top: 120px;
 }
 .icon3 img,
-.brand img {
+.brand-icon img {
   width: 100px;
 }
 
@@ -127,7 +127,7 @@
 .plus1 img,
 .plus2 img,
 .plus3 img {
-  width: 31px;
+  width: 30px;
 }
 
 .plus3 {
@@ -146,8 +146,13 @@ div.insist,
 
   /* height: 150px; */
 }
-
-/* 動畫 */
+.brand-icon {
+  /* border: 1px solid rgb(29, 156, 146); */
+  display: inline-block;
+  position: absolute;
+  left: 439px;
+  top: 352px;
+}
 
 .content2 p {
   font-size: 24px;
@@ -159,72 +164,154 @@ div.insist,
 .brand_text {
   font-size: 18px;
   width: 311px;
+  height: 260px;
   background-color: #c7dec2;
   color: white;
-  padding: 40px 50px;
+  padding: 30px 25px;
   display: inline-block;
-  position: absolute;
-  left: 887px;
-  bottom: 160px;
-
   /* position: absolute;
-  top: 50px;  霈𦠜��舫��桃�摰帋�嚗� */
+  left: 887px;
+  bottom: -6px; */
+}
+
+.box {
+  position: relative;
+  width: 300px;
 }
 .brand_title {
   font-size: 36px;
-  display: inline-block;
+  /* display: inline-block; */
   position: absolute;
-  left: 892px;
-  top: -786px;
+  left: 16px;
+  top: -386px;
   color: #4a847e;
 }
-/* margin-block-start: 1em;
-margin-block-end: 1em;
-margin-inline-start: 0px;
-margin-inline-end: 0px; */
 
 .content2 img.bagr {
   width: 892px;
 }
 
-/* content3 */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* .brand_text {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: -130px;
+    margin: 0 auto;
+    width: 540px;
+    height: 180px;
+  }  */
+  .content2 {
+    /* width: 540px; */
+    display: flex;
+    flex-direction: column;
+  }
+  .brand_title {
+    /* border: 1px solid green; */
+    position: absolute;
+    left: 0;
+    top: -618px;
+    writing-mode: sideways-lr !important;
+  }
+  .icon3 img {
+    width: 48px;
+  }
+
+  .brand-icon {
+    position: absolute;
+    left: 251px;
+    top: 220px;
+  }
+  .brand-icon img {
+    width: 58px;
+    /* border: 1px solid green; */
+  }
+  .brand-icon p {
+    /* border: 1px solid green; */
+    position: absolute;
+    left: 8px;
+    top: 57px;
+  }
+  .plus1 img,
+  .plus2 img,
+  .plus3 img {
+    width: 18px;
+  }
+
+  .icon3 {
+    position: absolute;
+    left: 100px;
+    top: 65px;
+  }
+  .plus3 {
+    position: absolute;
+    left: 272px;
+    top: 190px;
+  }
+  .content3 > h1 {
+    display: block;
+    /* margin-bottom: 100px; */
+    /* width: 400px; */
+    position: absolute;
+    left: 0;
+    top: 1700px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1160px) {
+  .brand_text {
+    display: block;
+    /* position: absolute;
+    left: 0;
+    bottom: -109px; */
+    margin: 0 auto;
+    width: 720px;
+    height: 160px;
+    margin: 0 auto;
+  }
+}
+
+/* ======== 3款排毒蔬果汁 ========*/
 
 .content3 {
   /* border: 1px solid red; */
 }
 .content3 img {
-  border: 1px solid black;
-
-  width: 350px;
+  /* border: 1px solid black; */
+  width: 380px;
   height: 550px;
-  /* display: flex;
-  justify-content: space-between; */
 }
-/* .pic_green {
-  border: 1px solid blue;
-  margin-left: 20px;
-} */
 
+.happy_block {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 300px) and (max-width: 991px) {
+  .happy_block {
+    display: flex;
+    flex-direction: column;
+    margin-top: -120px;
+    margin: 0 auto;
+  }
+}
 .content3 > h1 {
   font-size: 36px;
   color: #4a847e;
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 60px;
+  margin-top: 150px;
   /* border: 1px solid red; */
 }
-.happy_block {
-  border: 1px solid rgb(109, 241, 213);
-}
-
 .thin {
   position: absolute;
   font-size: 30px;
-  width: 350px;
+  width: 380px;
   height: 125px;
   background-color: white;
   opacity: 0.7;
-  bottom: 225px;
+  bottom: 315px;
   display: none;
 }
 .thin:hover {
@@ -242,21 +329,50 @@ margin-inline-end: 0px; */
   color: black;
   /* display: none; */
 }
+.card-top {
+  /* border: 1px solid rgb(255, 174, 0); */
+  display: flex;
+}
+@media (min-width: 300px) and (max-width: 991px) {
+  .card-top,
+  .card-bottom {
+    /* border: 1px solid blue; */
+    width: 380px;
+    margin: 0 auto;
+  }
+  .card-bottom {
+    height: 160px;
+  }
+}
+
 /* ===== card-bottom  下方文字與數字 =====*/
 
 .card-bottom {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   font-size: 16px;
+  display: flex;
 }
 .card-bottom-left {
   font-size: 50px;
-  width: 95px;
-  height: 95px;
+  width: 100px;
+  height: 100px;
   background-color: #4a847e;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.card-bottom-right {
+  /* border: 1px solid red; */
+  width: 270px;
+  margin-top: 10px;
+  margin-bottom: 160px;
+  color: black;
+}
+.card-bottom-right > p {
+  font-size: 18px;
 }
 
 .number_block {
@@ -280,10 +396,6 @@ div.number1::after {
   z-index: -1; */
 }
 
-.happy_block {
-  /* border: 1px solid green; */
-  display: flex;
-}
 .happy_block > a {
   /* border: 1px solid red; */
   display: inline-block;
@@ -296,38 +408,6 @@ div.number1::after {
   position: relative;
   left: 120px;
   top: 3px;
-}
-.happy_block > a > span {
-  /* border: 1px solid black; */
-  display: inline-block;
-  width: 260px;
-  position: relative;
-  left: 120px;
-  bottom: -5px;
-  color: black;
-  font-size: 14px;
-  /* margin-right: 20px; */
-  /* text-decoration: none; */
-}
-
-/* 123�詨�閮剖� */
-
-.number_block {
-  /* border: 1px solid green; */
-  display: flex;
-  /* width: 300px; */
-}
-.number_block > .number2,
-.number3 {
-  margin-left: 311px;
-  position: relative;
-  bottom: 110px;
-  left: 0;
-}
-.number_block > .number1 {
-  position: relative;
-  bottom: 110px;
-  left: 0;
 }
 
 /* content4 */
@@ -531,18 +611,11 @@ div.brand {
   position: absolute;
   bottom: 250px;
   left: 420px;
-  animation-name: fadeInUp;
-  animation: fadeInUp 1.3s ease 1;
-  visibility: visible;
 }
 
 div.brand p {
   font-size: 24px;
   margin: 10px 0;
-}
-
-.box {
-  position: relative;
 }
 
 /* ↑ */
@@ -563,16 +636,7 @@ div.brand p {
   outline: none;
   cursor: pointer;
 }
-/* 關掉漢堡 */
-.hamburger-container {
-  /* border: 1px solid red; */
-  /* display: none; */
-}
-/* @media (min-width: 1400px) and (max-width: 768px) {
-  header.header {
-    display: none;
-  }
-} */
+/*  ＝＝＝＝＝＝ 關掉漢堡 ＝＝＝＝＝ */
 
 img {
   max-width: 100%;
@@ -600,7 +664,7 @@ img {
     width: 720px;
     width: 100%;
 
-    margin-bottom: -80px;
+    margin-bottom: -60px;
   }
   ul.food li {
     display: inline-block;
@@ -614,7 +678,7 @@ img {
     width: 960px;
     width: 100%;
 
-    margin-bottom: -20px;
+    margin-bottom: 20px;
   }
   ul.food li {
     margin-right: 10px;

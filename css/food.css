@@ -102,14 +102,13 @@
 .farm > p {
   font-size: 36px;
   color: #4a847e;
+  padding-bottom: 20px;
   margin: 0;
   /* border: 1px solid red; */
   width: 306px;
   display: inline-flex;
   position: relative;
   left: 890px;
-  /* right: 0px; */
-  /* margin-left: 50%; */
 }
 .leaves {
   width: 1200px;
@@ -124,9 +123,9 @@
   width: 350px;
   /* border: 1px solid red; */
   position: absolute;
-  top: 200px;
+  top: -90px;
   z-index: 2;
-  left: 50px;
+  left: 103px;
 }
 .leave img {
   width: 1200px;
@@ -155,16 +154,15 @@
   display: inline-block;
   width: 550px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .leave > p {
   /* border: 1px solid red; */
   font-size: 18px;
   /* text-align: center; */
   margin: 0 auto;
-
-  /* display: inline-block; */
   width: 480px;
+  margin-top: 25px;
 }
 .taiwanpic {
   /* margin-top: 400px; */
