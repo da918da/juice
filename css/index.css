@@ -89,7 +89,7 @@
 .content2 {
   border: 1px solid purple;
   display: flex;
-  margin-top: 70px;
+  margin-top: 25px;
   position: relative;
 }
 .content2-left {
@@ -178,10 +178,6 @@ div.insist,
 }
 .brand_title {
   font-size: 36px;
-  /* display: inline-block; */
-  position: absolute;
-  left: 16px;
-  top: -386px;
   color: #4a847e;
 }
 
@@ -190,15 +186,6 @@ div.insist,
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* .brand_text {
-    display: flex;
-    position: absolute;
-    left: 0;
-    bottom: -130px;
-    margin: 0 auto;
-    width: 540px;
-    height: 180px;
-  }  */
   .content2 {
     /* width: 540px; */
     display: flex;
@@ -257,17 +244,83 @@ div.insist,
 }
 
 @media (min-width: 768px) and (max-width: 1160px) {
-  .brand_text {
-    display: block;
-    /* position: absolute;
-    left: 0;
-    bottom: -109px; */
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
     margin: 0 auto;
+    
+  }
+  .brand_text{
+    margin-top: 0;
     width: 720px;
     height: 160px;
+    
+  }
+  .brand_title{
+    margin-bottom: 10px;
+    width: 720px;
     margin: 0 auto;
   }
+  .content2  img{
+    width: 64px;
+  }
+  .plus1 img,
+  .plus2 img,
+  .plus3 img {
+    width: 25px;
+  }
+
+  .icon3{
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    left: 172px;
+    top: 120px;
+  }
+  .plus3 {
+    position: absolute;
+    left: 370px;
+    top: 261px;
 }
+.brand-icon {
+  position: absolute;
+  left: 347px;
+  top: 300px;
+}
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px){
+.content2 {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  margin: 0 auto;
+  
+}
+.brand_text{
+  margin-top: 0;
+  width: 540px;
+  height: 180px;
+  margin-bottom: 600px;
+  margin: 0 auto;
+}
+.brand_title{
+  margin-bottom: 15px;
+    width: 540px;
+    margin: 0 auto;
+
+}
+.content2 img.bagr {
+  width: 540px;
+  margin: 0 auto;
+
+}
+}
+
 
 /* ======== 3款排毒蔬果汁 ========*/
 
