@@ -15,12 +15,37 @@
     <link rel="stylesheet" href="./css/vanders/slick-theme.css" />
   </head>
   <body>
-    <div class="your-class">
-      <div>your content</div>
-      <div>your content</div>
-      <div>your content</div>
-    </div>
-
+    <section class="regular slider">
+      <div>
+        <img src="http://placehold.it/350x300?text=1" />
+      </div>
+      <div>
+        <img src="http://placehold.it/350x300?text=2" />
+      </div>
+      <div>
+        <img src="http://placehold.it/350x300?text=3" />
+      </div>
+      <div>
+        <img src="http://placehold.it/350x300?text=4" />
+      </div>
+      <div>
+        <img src="http://placehold.it/350x300?text=5" />
+      </div>
+      <div>
+        <img src="http://placehold.it/350x300?text=6" />
+      </div>
+    </section>
+    <script type="text/javascript">
+      $(document).on("ready", function () {
+        $(".regular slider2").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        });
+      });
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
       type="text/javascript"

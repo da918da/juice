@@ -168,10 +168,10 @@ p.everyday {
   display: inline-block;
   position: relative;
 }
-.promise-more.reverse::after {
+.promise-more.reverse:before {
   width: 100%;
 }
-.promise-more::after {
+.promise-more:before {
   content: "";
   position: absolute;
   left: 0;

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
     <header class="header">
@@ -121,20 +123,25 @@
 <main class="main">
     <div class="pick">
 
-        <div class="pick_text">  
+        <div class="pick_text" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">  
             <h3>嚴選食材</h3>
             <p>做自己敢吃的，才可以賣出去</p>
             <span>精挑細選每批水果品質，這是我們對原料品質的堅持，帶給你最親近大自然的美味</span>
         </div>
 
-        <div class="item_3">
-        <div class="grid_item"><img src="./images/food/14.jpg" /></div>
+        <div class="item_3" data-aos="fade-up"
+        data-aos-duration="1000">
+        <a href="#" class="social_post">
+        <div class="grid_item"><img src="./images/food/14.jpg" /></div></a> 
         <div class="grid_item"><img src="./images/food/2re.jpg" /></div>
         <div class="grid_item"><img src="./images/food/3.jpg" /></div>
         </div>
 
 
-        <div class="item_5">
+        <div class="item_5" data-aos="fade-up"
+        data-aos-duration="1000">
           <div class="grid_item"><img src="./images/food/6.jpg" /></div>
           <div class="grid_item"><img src="./images/food/7.jpg" /></div>
           <div class="grid_item"><img src="./images/food/11re.png" /></div>
@@ -142,28 +149,31 @@
           <div class="grid_item"><img src="./images/food/8.jpg" /></div>
         </div>
 
-         <div class="item_4">
+         <div class="item_4" data-aos="fade-up"
+         data-aos-duration="1000">
             <div class="grid_item"><img src="./images/food/9.jpg" /></div>
          <div class="grid_item"><img src="./images/food/12.jpg" /></div>
             <div class="grid_item"><img src="./images/food/1.jpg" /></div>
             <div class="grid_item"><img src="./images/food/4re.png" /></div>
         </div>
 
-        <div class="item_2">
+        <div class="item_2" data-aos="fade-up"
+        data-aos-duration="1000">
         <div class="grid_item"><img src="./images/food/5.jpg" /></div>
         <div class="grid_item"><img src="./images/food/10.jpg" /></div>
         </div>
     </div>
 
     <div class="farm">
-        <p>自有農場 隨時把關</p>
+        <p data-aos="fade-left" data-aos-duration="1000">自有農場 隨時把關</p>
         <img class="leaves" src="./images/food/3e.jpg" alt="">
         <div class="leave">
             <h3>自己的菜自己種！ 打造可食農場</h3>
             <p>回歸到最根本的做法－自耕自食，透過自身雙手將餐桌上的綠意化無為有，原料來源皆能親自把關，這正是在全球各地漸漸成為的「農耕熱」風潮。<br>
                 種植的蔬果更能為本然果汁提供果汁新鮮食材，也強調食安把關，也為環境盡一份力，我們是友善家園的城市農夫。</p>
         </div>
-        <div class="people">
+        <div class="people" data-aos="fade-up"
+        data-aos-duration="1200">
             <img src="./images/food/111b0f9a1dcbe7b0b472ec6a941d4dfd.jpg">
         </div>
     </div>
@@ -193,5 +203,9 @@
           </p> -->
         
       </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>

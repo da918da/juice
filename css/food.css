@@ -92,9 +92,43 @@
 } */
 .grid_item img {
   width: 215px;
-
   /* border: 1px solid black; */
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+  transition: transform 1s;
 }
+
+.grid_item img:hover {
+transform: scale(1.1);
+opacity: 0.8;
+}
+
+/* a.social_post{
+  position: relative;
+  border: 1px solid blue;
+}
+
+a.social_post:after {
+  border: 1px solid rgb(196, 168, 13);
+  content: '查看貼文';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.4);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all .4s;
+} */
+
+
 /* farm */
 .farm {
   position: relative;

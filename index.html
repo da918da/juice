@@ -11,8 +11,14 @@
    <link rel="stylesheet" href="./css/style.css">
    <link rel="stylesheet" href="./css/footer.css">
    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -122,8 +128,54 @@
     <div class="banner">
       <!-- <img src="./images/index_img/banner01-02.png" /> -->
     </div>
+
+
+
+     <!-- Swiper -->
+     <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- <div class="swiper-slide">
+          <img src="./images/index_img/dre.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/index_img/03.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/index_img/erfe.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/index_img/97RE.png" />
+        </div> -->
+        <div class="swiper-slide">
+          <img src="./images/index_img/bannrr1.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/index_img/b02.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/index_img/b03.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/index_img/b04.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/index_img/b05.jpeg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/index_img/b06.jpeg" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-scrollbar"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
     <main class="main">
-      <div style="display: flex; justify-content: space-between; padding-bottom: 120px;">
+      <!-- <div style="display: flex; justify-content: space-between; padding-bottom: 120px;">
         <div class="content1">
           <h1>當季新品</h1>
           <h2>魔幻哈蜜美白仙子</h2>
@@ -142,7 +194,7 @@
         <div>
           <img class="melon" style="width: 400px; border-radius: 10px;  height: 540px;" src="./images/index_img/dre.png" />
         </div>
-      </div>
+      </div> -->
 
       <h1 class="brand_title">品牌介紹</h1>
 
@@ -207,13 +259,7 @@
 
     </div>
 
-  
-
-    
-     
-
    
-
     <div class="content3">
       <h1>3款排毒蔬果汁 喝了身體好開心</h1>
      <div class="happy_block">
@@ -234,7 +280,7 @@
               </div>
               <div class="card-bottom-right">
                 <p>果粒蔬果汁</p>
-                <span>超強抗氧化的食物，生薑能加速代謝、西洋芹清腸利便、蘋果可以美白，能帶給身體美白和保養的幫助</span>
+                <span class="small-words">超強抗氧化的食物，生薑能加速代謝、西洋芹清腸利便、蘋果可以美白，能帶給身體美白和保養的幫助</span>
               </div>
             </div>
           </a>
@@ -256,7 +302,7 @@
               </div>
               <div class="card-bottom-right">
                 <p>鳳蕉西米椰</p>
-                <span>鳳梨有豐富纖維質，再加上有天然能量棒之稱的香蕉，能幫助身體排毒、加速脂肪燃燒和分解</span>
+                <span class="small-words">鳳梨有豐富纖維質，再加上有天然能量棒之稱的香蕉，能幫助身體排毒、加速脂肪燃燒和分解</span>
               </div>
             </div>
           </a>
@@ -278,7 +324,7 @@
           </div>
           <div class="card-bottom-right">
             <p>滿福百香莓莓果</p>
-            <span>莓果類抗氧化，微酸口感又能一口喝進維生素C，特別是草莓中的鉀，能消浮腫</span>
+            <span class="small-words">莓果類抗氧化，微酸口感又能一口喝進維生素C，特別是草莓中的鉀，能消浮腫</span>
           </div>
         </div>
       </a>
@@ -362,11 +408,46 @@
     </p> -->
   
 </footer>
+
+ <!-- Swiper JS -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 1,
+     centeredSlides: false,
+     slidesPerGroupSkip: 1,
+     grabCursor: true,
+     keyboard: {
+       enabled: true,
+     },
+     breakpoints: {
+       769: {
+         slidesPerView: 2,
+         slidesPerGroup: 2,
+       },
+     },
+     scrollbar: {
+       el: ".swiper-scrollbar",
+     },
+     navigation: {
+       nextEl: ".swiper-button-next",
+       prevEl: ".swiper-button-prev",
+     },
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+   });
+ </script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+<script src="./js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="./js/index.js"></script>
 
   </body>

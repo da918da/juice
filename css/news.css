@@ -10,8 +10,9 @@ img {
 .promotions {
   font-size: 24px;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 80px;
   color: #4a847e;
+  margin-bottom: 30px;
 }
 .main1 {
   border: 1px solid black;
