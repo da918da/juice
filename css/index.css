@@ -169,9 +169,7 @@ div.insist,
   color: white;
   padding: 30px 25px;
   display: inline-block;
-  /* position: absolute;
-  left: 887px;
-  bottom: -6px; */
+  margin-top: 380px;
 }
 
 .box {
