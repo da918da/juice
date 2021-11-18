@@ -247,9 +247,12 @@ div.insist,
 
 @media (min-width: 768px) and (max-width: 1160px) {
   .content2 {
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    width: 720px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     /* margin: 0 auto; */
     
   }
@@ -278,18 +281,18 @@ div.insist,
     display: flex;
     flex-flow: row nowrap;
     position: absolute;
-    left: 172px;
+    left: 405px;
     top: 120px;
   }
   .plus3 {
     position: absolute;
-    left: 370px;
+    left: 605px;
     top: 261px;
 }
 .brand-icon {
   position: absolute;
-  left: 347px;
-  top: 300px;
+  left: 584px;
+  top: 320px;
 }
 
 
@@ -337,7 +340,7 @@ div.insist,
 }
 
 .happy_block {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   justify-content: space-between;
 }
@@ -358,7 +361,7 @@ div.insist,
   justify-content: center; */
   display: block;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   margin-top: 150px;
 }
 .small-words{
@@ -404,6 +407,9 @@ div.insist,
     width: 540px;
     margin-top: -120px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    
   }
   .content3 > h1 {
     display: flex;
@@ -411,7 +417,7 @@ div.insist,
     justify-content: left;
     margin-bottom: 60px;
     margin-top: 150px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 }
 
@@ -420,8 +426,9 @@ div.insist,
   .happy_block {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    border: 1px solid blueviolet;
+    align-items:center
+    /* justify-content:flex-start; */
+    /* border: 1px solid blueviolet; */
     /* width: 540px;
     margin-top: -120px;
     margin: 0 auto; */
@@ -510,7 +517,7 @@ div.number1::after {
 /* ===============content4 宅配 ================ */
 .content4 {
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .content4 img {
   width: 450px;
